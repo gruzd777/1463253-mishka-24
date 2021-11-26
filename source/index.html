@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Мишка</title>
 </head>
-<body class="page-body">
+<body class="page__body">
 
   <header class="page-header">
-    <a class="page-header__logo">
+    <a class="page-header__logo logo">
       <img class="logo" src="./img/mishka-logo-mobile.svg" width="86" height="35" alt="">
     </a>
-    <nav class="menu">
+    <nav class="page-header__menu menu">
       <ul class="menu__list">
       <li class="menu__item">
         <a class="menu__link" href="#">Каталог товаров</a>
@@ -70,7 +70,7 @@
           </tr>
         </table>
         <figure class="product__card">
-          <img class="product__img" src="./img/triple-set-mobile.png" alt="Серо-зелёно-розвая вязаная корзиночка" width="260" height="315">
+          <img class="product__img" src="./img/triple-set-mobile.png" alt="Серо-зелёно-розовая вязаная корзиночка" width="260" height="315">
           <figcaption class="product__price">Цена: 990 руб.</figcaption>
         </figure>
         <a class="button-link" href="#">Заказать</a>
@@ -141,6 +141,31 @@
   </a>
 </p>
   </footer>
+  <section class="modal">
+    <h2 class="modal__title">Добавить в корзину</h2>
+    <p class="modal__row">Выберите размер:</p>
+    <form class="form modal__form" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="fieldset modal__fieldset">
+        <legend class="fieldset__name">Размеры</legend>
+        <ul class="modal__list">
+          <li class="modal__item">
+            <label class="label modal__label" for="S">S</label>
+            <input class="input modal__input" type="checkbox" name="size-s" id="S" checked>
+          </li>
+          <li>
+            <label class="label modal__label" for="M">M</label>
+            <input class="input modal__input" type="checkbox" name="size-m" id="M">
+          </li>
+          <li>
+            <label class="label modal__label" for="L">L</label>
+            <input class="input modal__input" type="checkbox" name="size-l" id="L">
+          </li>
+        </ul>
+      </fieldset>
+
+    <button class="button modal__input" type="submit">Добавить</button>
+  </form>
+  </section>
 
 </body>
 </html>
