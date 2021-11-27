@@ -30,7 +30,79 @@
 
   </header>
 
-  <main></main>
+  <main>
+<section class="promo">
+<h1 class="promo__title">Вязание на заказ</h1>
+<p class="promo__row">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+</section>
+<div class="form">
+  <form action="https://echo.htmlacademy.ru" method="post">
+<fieldset class="form__fieldset fieldset">
+  <legend class="form__legend legend">Тип</legend>
+  <ul class="form__list">
+<li class="form__item">
+  <input class="form__input input" type="radio" name="type" value="interier" id="interier" checked>
+  <label class="form__label label" for="interier">Аксессуар для интерьера</label>
+</li>
+<li class="form__item">
+  <input class="form__input input" type="radio" name="type" value="joy" id="joy">
+  <label class="form__label label" for="joy">Детская игрушка</label>
+</li>
+  </ul>
+</fieldset>
+
+<fieldset class="form__fieldset fieldset">
+  <legend class="form__legend legend">Цвет</legend>
+  <ul class="form__list">
+    <li class="form__item">
+      <input class="form__input input" type="checkbox" name="white" id="white" checked>
+      <label class="form__label label" for="white">Белый</label>
+    </li>
+    <li>
+      <input class="form__input input" type="checkbox" name="gray" id="gray" checked>
+      <label class="form__label label" for="gray">Серый</label>
+    </li>
+    <li>
+      <input class="form__input input" type="checkbox" name="tiffani" id="tiffani">
+      <label class="form__label label" for="tiffani">"Тиффани"</label>
+    </li>
+    <li>
+      <input class="form__input input" type="checkbox" name="black" id="black">
+      <label class="form__label label" for="black">Чёрный</label>
+    </li>
+    <li>
+      <input class="form__input input" type="checkbox" name="pink" id="pink">
+      <label class="form__label label" for="pink">Розовый</label>
+    </li>
+    <li>
+      <input class="form__input input" type="checkbox" name="orange" id="orange">
+      <label class="form__label label" for="orange">Оранжевый</label>
+    </li>
+  </ul>
+</fieldset>
+<fieldset class="form__fieldset fieldset">
+  <legend class="form__legend legend">ФИО</legend>
+  <ul class="form__list">
+    <li class="form__item">
+      <label for="name">Имя:</label>
+      <input class="form__input" type="text" id="name" name="name" placeholder="Введите ваше имя*" autofocus required>
+    </li>
+    <li class="form__item">
+      <label for="secondname">Фамилия:</label>
+      <input class="form__input" type="text" id="secondname" name="secondname" placeholder="Укажите фамилию*" required>
+    </li>
+    <li class="form__item">
+      <label for="fathername">Отчество:</label>
+      <input class="form__input" type="text" id="fathername" name="fathername" placeholder="Отчество, если желаете">
+    </li>
+  </ul>
+</fieldset>
+
+  </form>
+</div>
+
+
+  </main>
 
     <footer class="page-footer">
       <section class="social">
