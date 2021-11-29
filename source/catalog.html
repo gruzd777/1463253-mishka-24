@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>HTML Academy: Мишка</title>
 </head>
 <body class="page__body">
   <header class="page-header">
@@ -36,10 +36,13 @@
       <h1 class="promo__title">Каталог товаров</h1>
       </section>
   <section class="card">
+    <h2 class="visually hidden">Список карточек товаров</h2>
     <ul class="card__list">
       <li class="card__item">
         <div class="card__image">
-          <img src="img/cards/rabbit-m.png" width="260" height="195" alt="Зайчик-попрыгайчик">
+          <a class="card__link" href="#" aria-label="Перейти на страницу с подробным описанием товара">
+            <img src="img/cards/rabbit-m.png" width="260" height="195" alt="Зайчик-попрыгайчик">
+          </a>
         </вшм>
         <h3 class="card__title">Зайчик-попрыгайчик</h3>
         <p class="card__row">Рост 30 см, вес 200 г</p>
@@ -47,7 +50,9 @@
       </li>
       <li class="card__item">
         <div class="card__image">
+          <a class="card__link" href="#" aria-label="Перейти на страницу с подробным описанием товара">
           <img src="img/cards/basket-m.png" width="260" height="195" alt="Корзинка для белья">
+        </a>
         </div>
         <h3 class="card__title">Корзинка для белья</h3>
         <p class="card__row">Диаметр 15 см, высота 10 см</p>
@@ -55,7 +60,9 @@
       </li>
       <li class="card__item">
         <div class="card__image">
-          <img src="img/cards/big-basket-m.png" width="260" height="195" alt="Большая корзинка для игрушек">
+          <a class="card__link" href="#" aria-label="Перейти на страницу с подробным описанием товара">
+            <img src="img/cards/big-basket-m.png" width="260" height="195" alt="Большая корзинка для игрушек">
+          </a>
         </div>
         <h3 class="card__title">Большая корзинка для игрушек</h3>
         <p class="card__row">Диаметр 30 см, высота 30 см</p>
@@ -63,6 +70,16 @@
       </li>
     </ul>
   </section>
+  <div class="page-main__video">
+    <h2 class="visually-hidden">Видео-материалы</h2>
+    <h3 class="page-main__video-title">Процесс производства</h3>
+    <p class="page-main__video-image">
+      <img src="./img/video-mobile.jpg" width="260" height="150" alt="Видео-ролик">
+      <img src="./img/play.svg.svg" width="101" height="77" alt="Кнопка проигрывателя">
+    </p>
+    <p class="page-main__video-description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+    <a class="button-link" href="#">Сделать заказ</a>
+  </div>
 
   </main>
 
