@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Мишка</title>
 </head>
-<body>
+<body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo logo" href="index.html">
+    <a class="page-header__logo logo" href="index.html" aria-label="Переход на главную страницу">
       <img class="logo" src="./img/mishka-logo-mobile.svg" width="86" height="35" alt="">
     </a>
     <nav class="page-header__menu menu">
       <ul class="menu__list">
       <li class="menu__item">
-        <a class="menu__link" href="#">Каталог товаров</a>
+        <a class="menu__link" href="catalog.html">Каталог товаров</a>
       </li>
       <li class="menu__item">
-        <a class="menu__link" href="#">Вязание на  заказ</a>
+        <a class="menu__link" href="form.html">Вязание на  заказ</a>
       </li>
       <li class="menu__item">
         <a  class="menu__link" href="#">Поиск по сайту</a>
@@ -30,7 +30,7 @@
 
   </header>
 
-  <main>
+  <main class="page-main">
 <section class="promo">
 <h1 class="promo__title">Вязание на заказ</h1>
 <p class="promo__row">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
@@ -84,20 +84,36 @@
   <legend class="form__legend legend">ФИО</legend>
   <ul class="form__list">
     <li class="form__item">
-      <label for="name">Имя:</label>
+      <label class="form__label label" for="name">Имя:</label>
       <input class="form__input" type="text" id="name" name="name" placeholder="Введите ваше имя*" autofocus required>
     </li>
     <li class="form__item">
-      <label for="secondname">Фамилия:</label>
+      <label class="form__label label" for="secondname">Фамилия:</label>
       <input class="form__input" type="text" id="secondname" name="secondname" placeholder="Укажите фамилию*" required>
     </li>
     <li class="form__item">
-      <label for="fathername">Отчество:</label>
+      <label class="form__label label" for="fathername">Отчество:</label>
       <input class="form__input" type="text" id="fathername" name="fathername" placeholder="Отчество, если желаете">
     </li>
   </ul>
 </fieldset>
 
+<address class="form__adress">
+<p class="form__adress-row">
+  <label class="form__label-adress" for="tel">Тел</label>
+  <input class="form__input" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+</p>
+<p class="form__adress-row">
+  <label class="form__label-adress" for="email">E-mail</label>
+  <input class="form__input" type="email" name="email" id="email" placeholder="Ваш Email*" required>
+</p>
+</address>
+<p class="form__adress-row">
+  <label class="form__label label" for="extra">Доп</label>
+  <textarea name="extra" id="extra" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+  <sup>*Поля обязательны для заполнения</sup>
+</p>
+<button class="button" type="submit">Отправить заказ</button>
   </form>
 </div>
 
