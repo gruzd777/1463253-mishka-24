@@ -1,4 +1,13 @@
-body {
-  background: red;
-}
+// global
+@import "./global/variables.scss";
+@import "./global/fonts.scss";
+@import "./global/visually-hidden";
+@import "./global/global.scss";
+
+
+
+//blocks
+@import "./blocks/page.scss";
+@import "./blocks/page__body.scss";
+@import "./blocks/page-header.scss";
 
