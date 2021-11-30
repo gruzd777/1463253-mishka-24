@@ -5,19 +5,23 @@
 
 .page-header__logo {
   display: block;
+}
+
+.logo {
   text-align: center;
+  padding: 20px 0;
 }
 
 .page-header__menu {
-  position: relative;
+
 }
 
 .page-header__toggle {
   position: absolute;
   width: 20px;
   height: 14px;
-  top: 0;
-  left: 0;
+  top: 40px;
+  right: 40px;
   cursor: pointer;
   background: #ffffff;
   border: none;
@@ -72,16 +76,10 @@
   position: relative;
   display: flex;
   justify-content: flex-start;
+  border-top: 1px solid #ECECEC;
 
-  &::before {
-    content: "";
-    width: auto;
-    height: 1px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #ECECEC;
-
+  &:last-child {
+    border-bottom: 1px solid #ECECEC;
   }
 
 

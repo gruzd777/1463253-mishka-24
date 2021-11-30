@@ -3,11 +3,12 @@
 @import "./global/fonts.scss";
 @import "./global/visually-hidden";
 @import "./global/global.scss";
+@import "./global/container.scss";
 
 
 
 //blocks
 @import "./blocks/page.scss";
-@import "./blocks/page__body.scss";
+@import "./blocks/page-body.scss";
 @import "./blocks/page-header.scss";
 
