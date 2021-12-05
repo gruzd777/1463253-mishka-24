@@ -10,9 +10,13 @@
   <body class="page-body">
     <header class="page-header">
       <a class="logo page-header__logo">
-        <img src="./img/mishka-logo-mobile.svg" width="86" height="35" alt="" />
+        <picture>
+          <source srcset="./img/mishka-logo-desktop.svg" media="(min-width: 1150px)">
+          <source srcset="./img/mishka-logo-tablet.svg" media="(min-width: 768px)">
+          <img class="page-header__logo-img" src="./img/mishka-logo-mobile.svg" width="86" height="35" alt="">
+        </picture>
       </a>
-      <nav class="page-header__menu page-header__menu--opened menu">
+      <nav class="page-header__menu page-header__menu--closed menu">
         <ul class="menu__list">
           <li class="menu__item">
             <a class="menu__link" href="catalog.html">Каталог товаров</a>
@@ -29,6 +33,7 @@
         </ul>
         <button class="page-header__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
       </nav>
+      <p class="page-header__deleviry">Бесплатная доставка по России</p>
     </header>
 
     <main class="page-main">

@@ -1,3 +1,9 @@
+.promo {
+  background: #eeeeee url("../../img/promo-m.png") no-repeat center -18px;
+  padding: 72px 0 0 0;
+  background-size: contain;
+}
+
 .promo__title {
   font-weight: 700;
   font-size: 27px;
@@ -5,6 +11,7 @@
   margin: 0 auto;
   width: 250px;
   text-align: center;
+  padding: 0 0 119px 0;
 }
 
 

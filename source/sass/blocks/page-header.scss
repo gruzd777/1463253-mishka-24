@@ -3,8 +3,17 @@
   padding: 22px 0 17px 0;
 }
 
+.page-header__deleviry {
+  display: none;
+  font-size: 15px;
+  line-height: 24px;
+  color: #444444;
+  margin: 0;
+}
+
 .page-header__toggle {
   position: absolute;
+  padding: 0;
   width: 21px;
   height: 20px;
   top: 38px;
@@ -19,10 +28,10 @@
   width: 20px;
   height: 2px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -6px;
+  left: 1px;
   background: #000000;
-  box-shadow: 0 4px 0 0 #000000, 0 8px 0 0 #000000;
+  box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
 }
 
 
@@ -62,6 +71,7 @@
   padding: 27px 0 27px 0;
   position: relative;
   display: flex;
+  justify-content: center;
   border-top: 1px solid #ececec;
 
   &:last-child {
@@ -95,4 +105,41 @@
   font-size: 17px;
   line-height: 24px;
   color: #000000;
+}
+
+@media (min-width: $tablet) {
+  .page-header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .page-header__logo {
+    outline: 2px solid rgb(45, 189, 64);
+    outline-offset: -2px;
+  }
+
+  .menu__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .menu__item {
+    border: none;
+    outline: 2px solid tomato;
+    outline-offset: -2px;
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+
+  .page-header__deleviry {
+    display: block;
+    outline: 2px solid tomato;
+    outline-offset: -2px;
+  }
 }
