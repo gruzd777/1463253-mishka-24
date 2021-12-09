@@ -1,0 +1,87 @@
+.about {
+  margin: 0 0 58px 0;
+}
+
+.about__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+  margin: 0 auto 82px auto;
+  width: 260px;
+}
+
+.about__list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  width: 260px;
+}
+
+.about__item {
+  height: 40px;
+  margin: 0 0 83px 0;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+
+  &:last-child {
+    margin: 0 0 0 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+  }
+}
+
+.about__item--flower::before {
+  top: -55px;
+  left: 8px;
+  width: 33px;
+  height: 38px;
+  background: url("../../img/icons/flower.svg") no-repeat;
+}
+
+.about__item--slyle::before {
+  top: -55px;
+  left: 0;
+  width: 47px;
+  height: 27px;
+  background: url("../../img/icons/style.svg") no-repeat;
+}
+
+.about__item--heart::before {
+  top: -49px;
+  left: 7px;
+  width: 34px;
+  height: 27px;
+  background: url("../../img/icons/heart.svg") no-repeat;
+}
+
+.about__item--ball::before {
+  top: -52px;
+  left: 3px;
+  width: 35px;
+  height: 34px;
+  background: url("../../img/icons/ball.svg") no-repeat;
+}
+
+.about__item--rocket::before {
+  top: -52px;
+  left: -6px;
+  width: 55px;
+  height: 23px;
+  background: url("../../img/icons/rocket.svg") no-repeat;
+}
+
+.about__item--present::before {
+  top: -53px;
+  left: 3px;
+  width: 33px;
+  height: 32px;
+  background: url("../../img/icons/present.svg") no-repeat;
+}

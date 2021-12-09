@@ -1,3 +1,7 @@
+.product {
+  margin: 0 0 73px 0;
+}
+
 .product__subtitle {
   font-weight: 700;
   font-size: 25px;
@@ -43,6 +47,10 @@
   padding: 0;
   border-spacing: 0;
   color: #444444;
+}
+
+.product__card {
+  margin: 0;
 }
 
 .product__price {

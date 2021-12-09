@@ -1,5 +1,4 @@
 .button-link {
-  display: block;
   margin: 0 auto;
   color: #444444;
   text-transform: uppercase;
@@ -13,5 +12,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 6px;
+    background: url("../../img/zigzag-line.svg") no-repeat;
+  }
 }
 
