@@ -58,29 +58,26 @@
   margin: 0;
   border: none;
   background-color: transparent;
+}
+
+.reviews__btn--back {
   position: relative;
 
   &::before {
     content: "";
     position: absolute;
+    background: url("../../img/icons/huge-arrow-left.svg");
+    top: 0;
+    left: 0;
+    height: 26px;
+    width: 50px;
   }
 }
 
-.reviews__btn--back::before {
-  background: url(../../img/icons/huge-arrow-left.svg);
-  top: 12px;
-  left: 38px;
-  width: 50px;
-  height: 26px;
-}
-
 .reviews__btn--next::before {
-  background: url(../../img/icons/huge-arrow-right.svg);
+  background: url("../../img/icons/huge-arrow-right.svg");
   top: 12px;
   left: 168px;
   width: 50px;
   height: 26px;
-
 }
-
-
