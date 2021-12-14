@@ -4,24 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>HTML Academy: Мишка</title>
   </head>
-  <body class="page__body">
+  <body class="page-body">
     <header class="page-header">
-      <a
-        class="page-header__logo logo"
-        href="index.html"
-        aria-label="Переход на главную страницу"
-      >
-        <img
-          class="logo"
-          src="./img/mishka-logo-mobile.svg"
-          width="86"
-          height="35"
-          alt=""
-        />
+      <a class="logo page-header__logo" href="index.html">
+        <picture>
+          <source srcset="./img/mishka-logo-desktop.svg" media="(min-width: 1150px)">
+          <source srcset="./img/mishka-logo-tablet.svg" media="(min-width: 768px)">
+          <img class="page-header__logo-img" src="./img/mishka-logo-mobile.svg" width="86" height="35" alt="">
+        </picture>
       </a>
-      <nav class="page-header__menu menu">
+      <nav class="page-header__menu page-header__menu--closed menu">
+        <div class="menu page-header__wrapper">
         <ul class="menu__list">
           <li class="menu__item">
             <a class="menu__link" href="catalog.html">Каталог товаров</a>
@@ -29,20 +25,25 @@
           <li class="menu__item">
             <a class="menu__link" href="form.html">Вязание на заказ</a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item menu__item--search">
             <a class="menu__link" href="#">Поиск по сайту</a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item menu__item--cart">
             <a class="menu__link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
+      </div>
+        <button class="page-header__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
       </nav>
+      <p class="page-header__deleviry">Бесплатная доставка по России</p>
     </header>
 
     <main class="page-main">
-      <section class="promo">
-        <h1 class="promo__title">Вязание на заказ</h1>
-        <p class="promo__row">
+      <section class="form-promo">
+        <div class="form-promo__group">
+          <h1 class="form-promo__title title">Вязание на заказ</h1>
+        </div>
+        <p class="form-promo__heading container">
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
           форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
