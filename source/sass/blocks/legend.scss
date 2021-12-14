@@ -1,0 +1,21 @@
+.legend {
+  position: relative;
+  padding: 0;
+  border: 0;
+  margin: 0 0 35px 0;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $base-green-l;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    top: 8px;
+    left: 60px;
+    background: #62D1BA;
+  }
+}
