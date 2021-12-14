@@ -1,0 +1,57 @@
+.promo {
+  background: #eeeeee url("../../img/promo-m.png") no-repeat center -18px;
+  padding: 72px 0 0 0;
+  background-size: contain;
+}
+
+.promo__title {
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  margin: 0 auto;
+  width: 250px;
+  text-align: center;
+  padding: 0 0 119px 0;
+}
+
+.promo__group {
+  margin: 0 0 33px 0;
+}
+
+.promo__link {
+  display: block;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  color: #ffffff;
+  padding: 25px 0 30px 30px;
+  position: relative;
+
+  &--light {
+    background: $base-green-l;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 62px;
+      top: 23px;
+      right: 36px;
+      background: url("../../img/icons/interior.svg") no-repeat;
+    }
+  }
+
+  &--dark {
+    background: $base-green-d;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: 21px;
+      right: 27px;
+      background: url("../../img/icons/toy.svg") no-repeat;
+    }
+  }
+}
