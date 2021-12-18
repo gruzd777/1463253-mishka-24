@@ -91,7 +91,10 @@
 
 .product__card {
   margin: 0 auto;
-  max-width: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .product__price {

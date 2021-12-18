@@ -72,13 +72,11 @@
           </li>
         </ul>
         <figure class="product__card">
-          <img
-            class="product__img"
-            src="./img/triple-set-mobile.png"
-            alt="Серо-зелёно-розовая вязаная корзиночка"
-            width="260"
-            height="315"
-          />
+          <picture>
+            <source media="(min-width: 1150px)" srcset="./img/hat-desktop.jpg 1x, ./img/hat-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="./img/hat-tablet.jpg 1x, ./img/hat-tablet@2x.jpg 2x">
+            <img class="product__img" src="./img/hat-mobile.jpg" srcset="./img/hat-mobile@2x.jpg 2x" alt="Серо-зелёно-розовая вязаная корзиночка">
+          </picture>
           <figcaption class="product__price">Цена: 990 руб.</figcaption>
         </figure>
         <a class="button-link" href="#">Заказать</a>
@@ -87,12 +85,12 @@
         <h2 class="visually-hidden">Наши преимущества</h2>
         <h3 class="about__title">Коротко о нас:</h3>
         <ul class="about__list">
-          <li class="about__item about__item--flower">Экологически чистые материалы</li>
-          <li class="about__item about__item--slyle">Скандинавский стиль по российской цене</li>
-          <li class="about__item about__item--heart">Увеличивает лайки на фотографиях</li>
-          <li class="about__item about__item--ball">Связано вручную с любовью и умилением</li>
+          <li class="about__item about__item--flower">Экологически <br> чистые материалы</li>
+          <li class="about__item about__item--slyle">Скандинавский стиль <br> по российской цене</li>
+          <li class="about__item about__item--heart">Увеличивает лайки <br> на фотографиях</li>
+          <li class="about__item about__item--ball">Связано вручную <br> с любовью и умилением</li>
           <li class="about__item about__item--rocket">Поддержка отечественного производителя</li>
-          <li class="about__item about__item--present">Поставляется в подарочной упаковке</li>
+          <li class="about__item about__item--present">Поставляется <br> в подарочной упаковке</li>
         </ul>
       </section>
       <section class="reviews container">

@@ -13,6 +13,12 @@
   font-size: 15px;
   line-height: 30px;
   color: #444444;
+
+  @media (min-width: 321px) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .reviews__person {
@@ -55,29 +61,25 @@
 
 .reviews__btn {
   padding: 0;
-  margin: 0;
+  margin: auto;
+  width: 50%;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
 }
 
-.reviews__btn--back {
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    background: url("../../img/icons/huge-arrow-left.svg");
-    top: 0;
-    left: 0;
-    height: 26px;
-    width: 50px;
-  }
+.reviews__btn--back::before {
+  content: "";
+  width: 50px;
+  height: 26px;
+  background: url("../../img/icons/huge-arrow-left.svg") no-repeat;
 }
 
 .reviews__btn--next::before {
-  background: url("../../img/icons/huge-arrow-right.svg");
-  top: 12px;
-  left: 168px;
+  content: "";
   width: 50px;
   height: 26px;
+  background: url("../../img/icons/huge-arrow-right.svg") no-repeat;
 }

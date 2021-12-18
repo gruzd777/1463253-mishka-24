@@ -18,7 +18,7 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
-  width: 260px;
+  max-width: 410px;
 }
 
 .about__item {
@@ -27,6 +27,12 @@
   position: relative;
   display: flex;
   align-items: flex-end;
+
+  @media (min-width: 321px) {
+    br {
+      display: none;
+    }
+  }
 
   &:last-child {
     margin: 0 0 0 0;
