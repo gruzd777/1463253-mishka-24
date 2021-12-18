@@ -1,6 +1,6 @@
 .reviews {
   position: relative;
-  margin: 0 0 93px 0;
+  margin: 0 0 91px 0;
 
   &::after {
     content: "";
@@ -77,13 +77,22 @@
 
 .reviews__btn {
   padding: 0;
-  margin: auto;
   width: 50%;
   border: none;
   background-color: transparent;
   cursor: pointer;
   display: flex;
   justify-content: center;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews__btn--back::before {

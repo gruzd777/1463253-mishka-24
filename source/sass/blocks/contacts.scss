@@ -1,0 +1,29 @@
+.contacts__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.contacts__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__link {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.contacts__row {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.contacts__map {
+  margin: 0 0 42px 0;
+}

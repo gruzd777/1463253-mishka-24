@@ -14,6 +14,16 @@
   align-items: center;
   position: relative;
 
+  &:hover,
+  &:focus {
+    background-image: linear-gradient(0deg, #444444, #444444);
+    color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   &::after {
     content: "";
     position: absolute;
