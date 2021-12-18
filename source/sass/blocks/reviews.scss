@@ -1,3 +1,19 @@
+.reviews {
+  position: relative;
+  margin: 0 0 93px 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 6px;
+    bottom: -52px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url("../../img/zigzag-line.svg");
+  }
+}
+
 .reviews__title {
   margin: 0 0 13px 0;
   font-weight: 700;
