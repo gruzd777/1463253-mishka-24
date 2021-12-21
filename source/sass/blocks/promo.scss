@@ -1,7 +1,20 @@
 .promo {
-  background: #eeeeee url("../../img/promo-m.png") no-repeat center -18px;
+  background: #eeeeee url("../../img/promo-mobile.png") no-repeat center -18px;
   padding: 72px 0 0 0;
   background-size: contain;
+
+  @media (min-resolution: 2dppx) {
+    background: #eeeeee url("../../img/promo-mobile@2x.png") no-repeat center -18px;
+    background-size: contain;
+  }
+
+  @media (min-width: $tablet) {
+    background: #eeeeee url("../../img/promo-tablet-desktop.png") no-repeat;
+  }
+
+  @media (min-width: $tablet) and (min-resolution: 2dppx) {
+    background: #eeeeee url("../../img/promo-tablet-desktop@2x.png") no-repeat;
+  }
 }
 
 .promo__title {
@@ -18,6 +31,14 @@
   margin: 0 0 33px 0;
 }
 
+.promo__back-light {
+  background: $base-green-l;
+}
+
+.promo__back-hard {
+  background: $base-green-d;
+}
+
 .promo__link {
   display: block;
   font-weight: 700;
@@ -26,6 +47,11 @@
   color: #ffffff;
   padding: 25px 0 30px 30px;
   position: relative;
+
+  &:hover,
+  &:focus {
+    transform: translateY(-5px);
+  }
 
   &--light {
     background: $base-green-l;

@@ -48,35 +48,29 @@
           форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
       </section>
-      <div class="form">
+      <div class="form container">
         <form action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form__fieldset fieldset">
             <legend class="form__legend legend">Тип</legend>
             <ul class="form__list">
-              <li class="form__item">
+              <li class="form__item-radio">
                 <input
-                  class="form__input input"
+                  class="form__input input radio visually-hidden"
                   type="radio"
                   name="type"
                   value="interier"
                   id="interier"
-                  checked
-                />
-                <label class="form__label label" for="interier"
-                  >Аксессуар для интерьера</label
-                >
+                  checked>
+                <label class="form__label label" for="interier">Аксессуар для интерьера</label>
               </li>
-              <li class="form__item">
+              <li class="form__item-radio">
                 <input
-                  class="form__input input"
+                  class="form__input input radio visually-hidden"
                   type="radio"
                   name="type"
                   value="joy"
-                  id="joy"
-                />
-                <label class="form__label label" for="joy"
-                  >Детская игрушка</label
-                >
+                  id="joy">
+                <label class="form__label label" for="joy">Детская игрушка</label>
               </li>
             </ul>
           </fieldset>
@@ -146,7 +140,7 @@
             <legend class="form__legend legend">ФИО</legend>
             <ul class="form__list">
               <li class="form__item">
-                <label class="form__label label" for="name">Имя:</label>
+                <label class="form__label" for="name">Имя:</label>
                 <input
                   class="form__input"
                   type="text"
@@ -159,8 +153,7 @@
               </li>
               <li class="form__item">
                 <label class="form__label label" for="secondname"
-                  >Фамилия:</label
-                >
+                  >Фамилия:</label>
                 <input
                   class="form__input"
                   type="text"
@@ -172,22 +165,20 @@
               </li>
               <li class="form__item">
                 <label class="form__label label" for="fathername"
-                  >Отчество:</label
-                >
+                  >Отчество:</label>
                 <input
                   class="form__input"
                   type="text"
                   id="fathername"
                   name="fathername"
-                  placeholder="Отчество, если желаете"
-                />
+                  placeholder="Отчество, если желаете">
               </li>
             </ul>
           </fieldset>
 
           <address class="form__adress">
             <p class="form__adress-row">
-              <label class="form__label-adress" for="tel">Тел</label>
+              <label class="form__label-adress legend" for="tel">Тел</label>
               <input
                 class="form__input"
                 type="tel"
@@ -198,7 +189,7 @@
               />
             </p>
             <p class="form__adress-row">
-              <label class="form__label-adress" for="email">E-mail</label>
+              <label class="form__label-adress legend" for="email">E-mail</label>
               <input
                 class="form__input"
                 type="email"
@@ -210,7 +201,7 @@
             </p>
           </address>
           <p class="form__adress-row">
-            <label class="form__label label" for="extra">Доп</label>
+            <label class="form__label label legend" for="extra">Доп</label>
             <textarea
               name="extra"
               id="extra"
