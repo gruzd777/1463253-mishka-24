@@ -137,11 +137,13 @@
           display: block;" allowfullscreen="" loading="lazy">
           </iframe>
         </div>
-        <a class="button-link" href="#">Напишите нам</a>
+        <div class="container">
+          <a class="button-link" href="#">Напишите нам</a>
+        </div>
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <a class="logo page-footer__logo">
         <img src="./img/mishka-logo-mobile.svg" width="86" height="35" alt="" />
       </a>
@@ -149,13 +151,25 @@
         <h2 class="social__title visually-hidden">Мы в социальных сетях</h2>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link" href="#" aria-label="Мы в инстаграмм"></a>
+            <a class="social__link" href="#" aria-label="Мы в инстаграмм">
+              <svg class="social__insta" width="22" height="22">
+                <use href="./img/sprite.svg#insta"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#" aria-label="Мы в фейсбук"></a>
+            <a class="social__link" href="#" aria-label="Мы в фейсбук">
+              <svg class="social__fb" width="15" height="28">
+                <use href="./img/sprite.svg#fb"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#" aria-label="Мы в твиттер"></a>
+            <a class="social__link" href="#" aria-label="Мы в твиттер">
+              <svg class="social__twitter" width="23" height="20">
+                <use href="./img/sprite.svg#twitter"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </section>
