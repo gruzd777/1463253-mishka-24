@@ -1,10 +1,17 @@
 .form__list {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   list-style: none;
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
+  width: 260px;
+
+  @media (min-width: $tablet) {
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 18px;
+  }
 }
 
 .form__adress {
@@ -17,4 +24,23 @@
   padding: 0 0 0 60px;
   width: 180px;
   min-height: 36px;
+
+  @media (min-width: $tablet) {
+    padding: 0 0 0 90px;
+  }
+}
+
+.form__item-checkbox {
+  position: relative;
+  margin: 0 0 43px 0;
+  padding: 0 0 0 60px;
+
+  @media (min-width: $tablet) {
+    padding: 0 0 0 90px;
+  }
+}
+
+.form__item-input {
+  display: flex;
+  flex-direction: column;
 }

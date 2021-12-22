@@ -16,6 +16,10 @@
     height: 1px;
     top: 8px;
     left: 60px;
-    background: #62D1BA;
+    background: #62d1ba;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
   }
 }
