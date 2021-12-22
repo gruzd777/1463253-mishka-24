@@ -55,7 +55,7 @@
             <ul class="form__list">
               <li class="form__item-radio">
                 <input
-                  class="form__input input radio visually-hidden"
+                  class="form__input radio visually-hidden"
                   type="radio"
                   name="type"
                   value="interier"
@@ -65,7 +65,7 @@
               </li>
               <li class="form__item-radio">
                 <input
-                  class="form__input input radio visually-hidden"
+                  class="form__input radio visually-hidden"
                   type="radio"
                   name="type"
                   value="joy"
@@ -78,60 +78,28 @@
           <fieldset class="form__fieldset fieldset">
             <legend class="form__legend legend">Цвет</legend>
             <ul class="form__list">
-              <li class="form__item">
-                <input
-                  class="form__input input"
-                  type="checkbox"
-                  name="white"
-                  id="white"
-                  checked
-                />
+              <li class="form__item-checkbox">
+                <input class="form__input checkbox visually-hidden" type="checkbox" name="white" id="white" checked>
                 <label class="form__label label" for="white">Белый</label>
               </li>
-              <li>
-                <input
-                  class="form__input input"
-                  type="checkbox"
-                  name="gray"
-                  id="gray"
-                  checked
-                />
+              <li class="form__item-checkbox">
+                <input class="form__input checkbox visually-hidden" type="checkbox" name="gray" id="gray" checked>
                 <label class="form__label label" for="gray">Серый</label>
               </li>
-              <li>
-                <input
-                  class="form__input input"
-                  type="checkbox"
-                  name="tiffani"
-                  id="tiffani"
-                />
-                <label class="form__label label" for="tiffani">"Тиффани"</label>
+              <li class="form__item-checkbox">
+                <input class="form__input checkbox visually-hidden" type="checkbox" name="tiffani" id="tiffani">
+                <label class="form__label label" for="tiffani">&laquoТиффани&raquo</label>
               </li>
-              <li>
-                <input
-                  class="form__input input"
-                  type="checkbox"
-                  name="black"
-                  id="black"
-                />
+              <li class="form__item-checkbox">
+                <input class="form__input checkbox visually-hidden" type="checkbox" name="black" id="black">
                 <label class="form__label label" for="black">Чёрный</label>
               </li>
-              <li>
-                <input
-                  class="form__input input"
-                  type="checkbox"
-                  name="pink"
-                  id="pink"
-                />
+              <li class="form__item-checkbox">
+                <input class="form__input checkbox visually-hidden" type="checkbox" name="pink" id="pink">
                 <label class="form__label label" for="pink">Розовый</label>
               </li>
-              <li>
-                <input
-                  class="form__input input"
-                  type="checkbox"
-                  name="orange"
-                  id="orange"
-                />
+              <li class="form__item-checkbox">
+                <input class="form__input checkbox visually-hidden" type="checkbox" name="orange" id="orange">
                 <label class="form__label label" for="orange">Оранжевый</label>
               </li>
             </ul>
@@ -139,10 +107,10 @@
           <fieldset class="form__fieldset fieldset">
             <legend class="form__legend legend">ФИО</legend>
             <ul class="form__list">
-              <li class="form__item">
+              <li class="form__item-input">
                 <label class="form__label" for="name">Имя:</label>
                 <input
-                  class="form__input"
+                  class="form__input input"
                   type="text"
                   id="name"
                   name="name"
@@ -151,11 +119,11 @@
                   required
                 />
               </li>
-              <li class="form__item">
+              <li class="form__item-input">
                 <label class="form__label label" for="secondname"
                   >Фамилия:</label>
                 <input
-                  class="form__input"
+                  class="form__input input"
                   type="text"
                   id="secondname"
                   name="secondname"
@@ -163,11 +131,11 @@
                   required
                 />
               </li>
-              <li class="form__item">
+              <li class="form__item-input">
                 <label class="form__label label" for="fathername"
                   >Отчество:</label>
                 <input
-                  class="form__input"
+                  class="form__input input"
                   type="text"
                   id="fathername"
                   name="fathername"

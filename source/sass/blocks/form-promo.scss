@@ -14,4 +14,9 @@
   font-size: 13px;
   line-height: 24px;
   color: #444444;
+
+  @media (min-width: $tablet) {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
