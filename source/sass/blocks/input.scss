@@ -9,5 +9,26 @@
   line-height: 18px;
   color: rgba($color: #000000, $alpha: 0.3);
   border-bottom: 2px solid #000000;
-  min-height: 52px;
+  min-height: 51px;
+  box-sizing: border-box;
+
+  &:hover,
+  &:hover,
+  &:hover {
+    border-bottom: 2px solid #62d1ba;
+  }
 }
+
+// .input[type="email"] {
+//   position: relative;
+
+//   &::before {
+//     content: "";
+//     width: 25px;
+//     height: 24px;
+//     top: 0;
+//     left: 0;
+//     position: absolute;
+//     background: url("../../img/icons/mail.svg") no-repeat;
+//   }
+// }

@@ -1,0 +1,19 @@
+.textarea {
+  padding: 17px;
+  background: #FFFFFF;
+  border: 2px solid #444444;
+  box-sizing: border-box;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 18px;
+  width: 260px;
+  height: 142px;
+  color: rgba($color: #000000, $alpha: 0.3);
+
+  &:hover,
+  &:hover,
+  &:hover {
+    border: 2px solid #62d1ba;
+  }
+}
