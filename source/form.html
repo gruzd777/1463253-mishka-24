@@ -9,14 +9,14 @@
   </head>
   <body class="page-body">
     <header class="page-header">
-      <a class="logo page-header__logo" href="index.html">
-        <picture>
-          <source srcset="./img/mishka-logo-desktop.svg" media="(min-width: 1150px)">
-          <source srcset="./img/mishka-logo-tablet.svg" media="(min-width: 768px)">
-          <img class="page-header__logo-img" src="./img/mishka-logo-mobile.svg" width="86" height="35" alt="">
-        </picture>
-      </a>
-      <nav class="page-header__menu page-header__menu--closed menu">
+      <nav class="page-header__menu page-header__menu--opened menu">
+        <a class="logo page-header__logo">
+          <picture>
+            <source srcset="./img/mishka-logo-desktop.svg" media="(min-width: 1150px)">
+            <source srcset="./img/mishka-logo-tablet.svg" media="(min-width: 768px)">
+            <img class="page-header__logo-img" src="./img/mishka-logo-mobile.svg" width="86" height="35" alt="">
+          </picture>
+        </a>
         <div class="menu page-header__wrapper">
         <ul class="menu__list">
           <li class="menu__item">
@@ -31,11 +31,12 @@
           <li class="menu__item menu__item--cart">
             <a class="menu__link" href="#">Корзина: пока пуста</a>
           </li>
+          <li class="page-header__deleviry">Бесплатная доставка по России
+          </li>
         </ul>
       </div>
         <button class="page-header__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
       </nav>
-      <p class="page-header__deleviry">Бесплатная доставка по России</p>
     </header>
 
     <main class="page-main">
@@ -50,76 +51,72 @@
       </section>
       <div class="form container">
         <form action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__fieldset fieldset">
-            <legend class="form__legend legend">Тип</legend>
-            <ul class="form__list">
-              <li class="form__item-radio">
-                <input
-                  class="form__input radio visually-hidden"
-                  type="radio"
-                  name="type"
-                  value="interier"
-                  id="interier"
-                  checked>
-                <label class="form__label label" for="interier">Аксессуар для интерьера</label>
-              </li>
-              <li class="form__item-radio">
-                <input
-                  class="form__input radio visually-hidden"
-                  type="radio"
-                  name="type"
-                  value="joy"
-                  id="joy">
-                <label class="form__label label" for="joy">Детская игрушка</label>
-              </li>
-            </ul>
+            <fieldset class="form__fieldset fieldset">
+              <div class="form__flex-group">
+                <legend class="form__legend legend">Тип</legend>
+                <ul class="form__list">
+                  <li class="form__item-radio">
+                    <input class="form__input radio visually-hidden" type="radio" name="type" value="interier" id="interier" checked>
+                    <label class="form__label label" for="interier">Аксессуар для интерьера</label>
+                  </li>
+                  <li class="form__item-radio">
+                    <input class="form__input radio visually-hidden" type="radio" name="type" value="joy" id="joy">
+                    <label class="form__label label" for="joy">Детская игрушка</label>
+                  </li>
+                </ul>
+              </div>
           </fieldset>
 
           <fieldset class="form__fieldset fieldset">
-            <legend class="form__legend legend">Цвет</legend>
-            <ul class="form__list">
-              <li class="form__item-checkbox">
-                <input class="form__input checkbox visually-hidden" type="checkbox" name="white" id="white" checked>
-                <label class="form__label label" for="white">Белый</label>
-              </li>
-              <li class="form__item-checkbox">
-                <input class="form__input checkbox visually-hidden" type="checkbox" name="gray" id="gray" checked>
-                <label class="form__label label" for="gray">Серый</label>
-              </li>
-              <li class="form__item-checkbox">
-                <input class="form__input checkbox visually-hidden" type="checkbox" name="tiffani" id="tiffani">
-                <label class="form__label label" for="tiffani">&laquoТиффани&raquo</label>
-              </li>
-              <li class="form__item-checkbox">
-                <input class="form__input checkbox visually-hidden" type="checkbox" name="black" id="black">
-                <label class="form__label label" for="black">Чёрный</label>
-              </li>
-              <li class="form__item-checkbox">
-                <input class="form__input checkbox visually-hidden" type="checkbox" name="pink" id="pink">
-                <label class="form__label label" for="pink">Розовый</label>
-              </li>
-              <li class="form__item-checkbox">
-                <input class="form__input checkbox visually-hidden" type="checkbox" name="orange" id="orange">
-                <label class="form__label label" for="orange">Оранжевый</label>
-              </li>
-            </ul>
+            <div class="form__flex-group">
+              <legend class="form__legend legend">Цвет</legend>
+              <ul class="form__list">
+                <li class="form__item-checkbox">
+                  <input class="form__input checkbox visually-hidden" type="checkbox" name="white" id="white" checked>
+                  <label class="form__label label" for="white">Белый</label>
+                </li>
+                <li class="form__item-checkbox">
+                  <input class="form__input checkbox visually-hidden" type="checkbox" name="gray" id="gray" checked>
+                  <label class="form__label label" for="gray">Серый</label>
+                </li>
+                <li class="form__item-checkbox">
+                  <input class="form__input checkbox visually-hidden" type="checkbox" name="tiffani" id="tiffani">
+                  <label class="form__label label" for="tiffani">&laquoТиффани&raquo</label>
+                </li>
+                <li class="form__item-checkbox">
+                  <input class="form__input checkbox visually-hidden" type="checkbox" name="black" id="black">
+                  <label class="form__label label" for="black">Чёрный</label>
+                </li>
+                <li class="form__item-checkbox">
+                  <input class="form__input checkbox visually-hidden" type="checkbox" name="pink" id="pink">
+                  <label class="form__label label" for="pink">Розовый</label>
+                </li>
+                <li class="form__item-checkbox">
+                  <input class="form__input checkbox visually-hidden" type="checkbox" name="orange" id="orange">
+                  <label class="form__label label" for="orange">Оранжевый</label>
+                </li>
+              </ul>
+            </div>
+
           </fieldset>
           <fieldset class="form__fieldset fieldset">
-            <legend class="form__legend legend">ФИО</legend>
-            <ul class="form__list">
-              <li class="form__item-input">
-                <label class="form__label" for="name">Имя:</label>
-                <input class="form__input input" type="text" id="name" name="name" placeholder="Введите ваше имя*" autofocus required>
-              </li>
-              <li class="form__item-input">
-                <label class="form__label label" for="secondname">Фамилия:</label>
-                <input class="form__input input" type="text" id="secondname" name="secondname" placeholder="Укажите фамилию*" required>
-              </li>
-              <li class="form__item-input">
-                <label class="form__label label" for="fathername">Отчество:</label>
-                <input class="form__input input" type="text" id="fathername" name="fathername" placeholder="Отчество, если желаете">
-              </li>
-            </ul>
+            <div class="form__flex-group">
+              <legend class="form__legend legend">ФИО</legend>
+              <ul class="form__list">
+                <li class="form__item-input">
+                  <label class="form__label" for="name">Имя:</label>
+                  <input class="form__input input" type="text" id="name" name="name" placeholder="Введите ваше имя*" autofocus required>
+                </li>
+                <li class="form__item-input">
+                  <label class="form__label label" for="secondname">Фамилия:</label>
+                  <input class="form__input input" type="text" id="secondname" name="secondname" placeholder="Укажите фамилию*" required>
+                </li>
+                <li class="form__item-input">
+                  <label class="form__label label" for="fathername">Отчество:</label>
+                  <input class="form__input input" type="text" id="fathername" name="fathername" placeholder="Отчество, если желаете">
+                </li>
+              </ul>
+            </div>
           </fieldset>
 
           <address class="form__adress">

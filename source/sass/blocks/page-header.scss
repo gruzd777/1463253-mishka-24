@@ -71,6 +71,7 @@
   .page-header__logo {
     outline: 2px solid rgb(45, 189, 64);
     outline-offset: -2px;
+    width: 370px;
   }
 
   .page-header__toggle {
@@ -81,5 +82,7 @@
     display: block;
     outline: 2px solid tomato;
     outline-offset: -2px;
+    flex-grow: 1;
+    text-align: right;
   }
 }

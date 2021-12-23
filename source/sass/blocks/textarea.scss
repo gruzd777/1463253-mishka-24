@@ -16,4 +16,9 @@
   &:hover {
     border: 2px solid #62d1ba;
   }
+
+  @media (min-width: $tablet) {
+    width: 510px;
+    height: 142px;
+  }
 }

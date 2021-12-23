@@ -25,6 +25,10 @@
     border-top: 1px solid #ececec;
     transform: translateX(-50%);
     margin: 0 0 0 -13px;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
   }
 
   &--search::after {
@@ -59,6 +63,8 @@
   .menu__list {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0;
   }
 
   .menu__item {
@@ -66,8 +72,13 @@
     outline: 2px solid tomato;
     outline-offset: -2px;
 
+    &:first-child {
+      width: 84px;
+    }
+
     &:last-child {
       border: none;
+      flex-grow: 1;
     }
   }
 }

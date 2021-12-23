@@ -17,6 +17,11 @@
   &:hover {
     border-bottom: 2px solid #62d1ba;
   }
+
+  @media (min-width: $tablet) {
+    font-size: 19px;
+    line-height: 18px;
+  }
 }
 
 // .input[type="email"] {
