@@ -1,11 +1,36 @@
+.form {
+  margin-bottom: 54px;
+}
+.form__flex-group {
+  @media (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.form__fieldset {
+  &:nth-child(2) {
+    margin: 0 0 2px 0;
+  }
+
+  &:nth-child(3) {
+    margin-bottom: 14px;
+  }
+}
+
+.form__legend {
+  margin: 0 0 35px 0;
+
+  &:nth-child(3) {
+    margin: 0 0 29px 0;
+  }
+}
+
 .form__list {
   padding: 0;
-  margin: 0 auto;
   list-style: none;
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
-  width: 260px;
 
   @media (min-width: $tablet) {
     font-weight: bold;
@@ -16,6 +41,7 @@
 
 .form__adress {
   font-style: normal;
+  margin: 0 0 38px 0;
 }
 
 .form__item-radio {
@@ -43,4 +69,45 @@
 .form__item-input {
   display: flex;
   flex-direction: column;
+  margin: 0 0 20px 0;
+}
+
+.form__adress-row {
+  margin: 0 0 35px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__adress-row--down {
+  margin: 0 0 31px 0;
+}
+
+.form__adress-row sup {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+
+  @media (min-width: $tablet) {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+.form__label-adress {
+  margin-bottom: 3px;
+}
+
+.form__label {
+  @media (min-width: $tablet) {
+    font-size: 19px;
+    line-height: 18px;
+  }
+}
+
+.form__textarea {
+  margin: 0 0 17px 0;
+}
+
+.form__label-textarea {
+  margin: 0 0 23px 0;
 }
