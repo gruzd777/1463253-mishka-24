@@ -11,14 +11,25 @@
   &::before {
     content: "";
     position: absolute;
-    width: 200px;
+    width: 100%;
     height: 1px;
     top: 8px;
-    left: 60px;
+    left: 0;
     background: #62d1ba;
+    z-index: 1;
+  }
+}
 
-    @media (min-width: $tablet) {
-      display: none;
-    }
+.legend__text {
+  position: relative;
+  display: inline-block;
+  background: #ffffff;
+  z-index: 2;
+  padding-right: 25px;
+}
+
+@media (min-width: $tablet) {
+  .legend::before {
+    display: none;
   }
 }
