@@ -55,7 +55,7 @@
         <form action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="form__fieldset fieldset">
               <div class="form__flex-group">
-                <legend class="form__legend legend">Тип</legend>
+                <legend class="form__legend legend"><span class="legend__text">Тип</span></legend>
                 <ul class="form__list">
                   <li class="form__item-radio">
                     <input class="form__input radio visually-hidden" type="radio" name="type" value="interier" id="interier" checked>
@@ -72,7 +72,7 @@
           <fieldset class="form__fieldset fieldset">
             <div class="form__flex-group">
               <legend class="form__legend legend"><span class="legend__text">Цвет</span></legend>
-              <ul class="form__list">
+              <ul class="form__list form__list--color">
                 <li class="form__item-checkbox">
                   <input class="form__input checkbox visually-hidden" type="checkbox" name="white" id="white" checked>
                   <label class="form__label label" for="white">Белый</label>
@@ -103,7 +103,7 @@
           </fieldset>
           <fieldset class="form__fieldset fieldset">
             <div class="form__flex-group">
-              <legend class="form__legend legend">ФИО</legend>
+              <legend class="form__legend legend"><span class="legend__text">ФИО</span></legend>
               <ul class="form__list">
                 <li class="form__item-input">
                   <label class="form__label" for="name">Имя:</label>
@@ -123,16 +123,16 @@
 
           <address class="form__adress">
             <p class="form__adress-row">
-              <label class="form__label-adress legend" for="tel">Тел</label>
+              <label class="form__label-adress legend" for="tel"><span class="legend__text">Тел</span></label>
               <input class="form__input input" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
             </p>
             <p class="form__adress-row">
-              <label class="form__label-adress legend" for="email">E-mail</label>
+              <label class="form__label-adress legend" for="email"><span class="legend__text">E-mail</span></label>
               <input class="form__input input" type="email" name="email" id="email" placeholder="Ваш Email*" required>
             </p>
           </address>
           <p class="form__adress-row form__adress-row--down">
-            <label class="form__label-textarea label legend" for="extra">Доп</label>
+            <label class="form__label-textarea label legend" for="extra"><span class="legend__text">Доп</span></label>
             <textarea class="form__textarea textarea" name="extra" id="extra" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             <sup>*Поля обязательны для заполнения</sup>
           </p>

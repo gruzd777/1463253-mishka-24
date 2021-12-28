@@ -3,3 +3,9 @@
   padding: 0;
   border: 0;
 }
+
+@media (min-width: $tablet) {
+  .fieldset {
+    margin: 0 0 89px 0;
+  }
+}

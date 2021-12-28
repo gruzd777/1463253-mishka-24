@@ -27,6 +27,7 @@
 
 .form__list {
   padding: 0;
+  margin: 0;
   list-style: none;
   font-weight: 700;
   font-size: 17px;
@@ -50,20 +51,12 @@
   padding: 0 0 0 60px;
   width: 180px;
   min-height: 36px;
-
-  @media (min-width: $tablet) {
-    padding: 0 0 0 90px;
-  }
 }
 
 .form__item-checkbox {
   position: relative;
   margin: 0 0 43px 0;
   padding: 0 0 0 60px;
-
-  @media (min-width: $tablet) {
-    padding: 0 0 0 90px;
-  }
 }
 
 .form__item-input {
@@ -86,22 +79,10 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
-
-  @media (min-width: $tablet) {
-    font-size: 17px;
-    line-height: 30px;
-  }
 }
 
 .form__label-adress {
   margin-bottom: 3px;
-}
-
-.form__label {
-  @media (min-width: $tablet) {
-    font-size: 19px;
-    line-height: 18px;
-  }
 }
 
 .form__textarea {
@@ -111,3 +92,45 @@
 .form__label-textarea {
   margin: 0 0 23px 0;
 }
+
+@media (min-width: $tablet) {
+  .form__list {
+    margin: -15px 0 0 0;
+    flex-grow: 1;
+  }
+
+  .form__list--color {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -7px 0 0px -10px;
+  }
+
+  .form__legend {
+    margin: 0 108px 0 0;
+  }
+
+  .form__label {
+    font-size: 19px;
+    line-height: 18px;
+    padding: 13px 0 0 0;
+    display: inline-block;
+  }
+
+  .form__adress-row sup {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .form__item-radio {
+    padding: 0 0 0 78px;
+    width: auto;
+    margin: 0px 0 40px 0;
+  }
+
+  .form__item-checkbox {
+    padding: 0 0 0 90px;
+    margin: 0 0 44px 0;
+    width: 160px;
+  }
+}
+
