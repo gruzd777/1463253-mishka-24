@@ -27,3 +27,11 @@
     color: rgba(255, 255, 255, 0.3);
   }
 }
+
+@media (min-width: $tablet) {
+  .button {
+    min-width: 230px;
+    width: 230px;
+    margin: 0;
+  }
+}
