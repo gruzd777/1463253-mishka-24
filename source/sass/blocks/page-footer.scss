@@ -1,6 +1,4 @@
 .page-footer {
-  // outline: 5px solid rgba(255, 0, 0, 0.7);
-  // outline-offset: -5px;
   background: #f1f1f1;
   padding-top: 29px;
   padding-bottom: 21px;
@@ -11,8 +9,6 @@
 }
 
 .page-footer__cop {
-  // outline: 5px solid rgba(0, 255, 0, 0.7);
-  // outline-offset: -5px;
   margin: 0 auto;
   width: 184px;
   display: flex;
@@ -24,4 +20,25 @@
   font-size: 19px;
   line-height: 18px;
   margin: 0 25px 0 0;
+}
+
+@media (min-width: $tablet) {
+  .page-footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .page-footer__group {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .page-footer__logo {
+    display: block;
+    margin: 0 137px 0 0;
+  }
+
+  .page-footer__cop {
+    margin: 0;
+  }
 }
