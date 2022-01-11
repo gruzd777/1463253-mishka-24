@@ -125,10 +125,6 @@
     display: inline-block;
   }
 
-  // .form__label--color {
-  //   padding: 11px 0 0 0;
-  // }
-
   .form__label--name {
     margin: 0 25px 0 0;
   }
@@ -139,7 +135,8 @@
   }
 
   .form__label-adress {
-    margin: 0 110px 0px 0px;
+    margin: 0;
+    width: 100px;
   }
 
   .form__label-textarea {
@@ -185,7 +182,16 @@
   .form__item-checkbox {
     padding: 0 0 0 82px;
     margin: 0 0 44px 0;
-    width: 160px;
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  .form__item-checkbox:nth-child(2n) .form__label::before {
+    left: 12px;
+  }
+
+  .form__item-checkbox:nth-child(2n) .form__label::after {
+    left: 21px;
   }
 
   .form__extra {

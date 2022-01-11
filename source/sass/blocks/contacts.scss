@@ -31,3 +31,33 @@
 .contacts__map {
   margin: 0 0 42px 0;
 }
+
+@media (min-width: $tablet) {
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin: 0;
+  }
+
+  .contacts__group {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contacts__adress {
+    width: 50%;
+  }
+
+  .contacts__row {
+    font-size: 17px;
+    line-height: 30px;
+    margin: 0;
+    width: 50%;
+  }
+
+  .contacts__link {
+    font-size: 17px;
+    line-height: 30px;
+    margin: 0;
+  }
+}

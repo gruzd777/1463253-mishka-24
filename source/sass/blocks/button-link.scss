@@ -33,5 +33,10 @@
     height: 6px;
     background: url("../../img/zigzag-line.svg") no-repeat;
   }
+
+  @media (min-width: $tablet) {
+    font-size: 17px;
+    line-height: 20px;
+  }
 }
 

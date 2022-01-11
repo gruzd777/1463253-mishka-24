@@ -128,14 +128,25 @@
 
           <address class="form__adress form__fieldset--color">
             <div class="container">
-              <p class="form__adress-row">
+              <div class="form__adress-row">
                 <label class="form__label-adress legend" for="tel"><span class="legend__text">Тел</span></label>
-                <input class="form__input form__fieldset--color input" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-              </p>
-              <p class="form__adress-row">
+                <div class="input-special">
+                  <input class="form__input form__fieldset--color input-special__input input" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                  <svg class="input-special__svg" width="25" height="24" viewBox="0 0 25 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./img/sprite.svg#phone"></use>
+                </svg>
+                </div>
+              </div>
+              <div class="form__adress-row">
                 <label class="form__label-adress legend" for="email"><span class="legend__text">E-mail</span></label>
-                <input class="form__input form__fieldset--color input" type="email" name="email" id="email" placeholder="Ваш Email*" required>
-              </p>
+                <div class="input-special">
+                  <input class="form__input form__fieldset--color input-special__input input" type="email" name="email" id="email" placeholder="Ваш Email*" required>
+                  <svg class="input-special__svg" width="32" height="21" viewBox="0 0 32 21" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="./img/sprite.svg#mail"></use>
+                    </svg>
+                </div>
+              </div>
             </div>
           </address>
           <div class="form__extra">
