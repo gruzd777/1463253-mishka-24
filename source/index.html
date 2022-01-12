@@ -210,49 +210,27 @@
       </div>
     </footer>
     <section class="modal">
-      <h2 class="modal__title">Добавить в корзину</h2>
-      <p class="modal__row">Выберите размер:</p>
-      <form
-        class="form modal__form"
-        action="https://echo.htmlacademy.ru"
-        method="post"
-      >
-        <fieldset class="fieldset modal__fieldset">
-          <legend class="fieldset__name">Размеры</legend>
-          <ul class="modal__list">
-            <li class="modal__item">
-              <label class="label modal__label" for="S">S</label>
-              <input
-                class="input modal__input"
-                type="checkbox"
-                name="size-s"
-                id="S"
-                checked
-              />
-            </li>
-            <li>
-              <label class="label modal__label" for="M">M</label>
-              <input
-                class="input modal__input"
-                type="checkbox"
-                name="size-m"
-                id="M"
-              />
-            </li>
-            <li>
-              <label class="label modal__label" for="L">L</label>
-              <input
-                class="input modal__input"
-                type="checkbox"
-                name="size-l"
-                id="L"
-              />
-            </li>
-          </ul>
-        </fieldset>
-
-        <button class="button modal__input" type="submit">Добавить</button>
-      </form>
+      <div class="container">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p class="modal__row">Выберите размер:</p>
+        <form class="form modal__form" action="https://echo.htmlacademy.ru" method="post">
+            <ul class="modal__list">
+              <li class="modal__item">
+                <input class="input modal__input visually-hidden" type="checkbox" name="size-s" id="S" checked/>
+                <label class="label modal__label" for="S">S</label>
+              </li>
+              <li class="modal__item">
+                <input class="input modal__input visually-hidden" type="checkbox" name="size-m" id="M"/>
+                <label class="label modal__label" for="M">M</label>
+              </li>
+              <li class="modal__item">
+                <input class="input modal__input visually-hidden" type="checkbox" name="size-l" id="L"/>
+                <label class="label modal__label" for="L">L</label>
+              </li>
+            </ul>
+          <button class="modal__button" type="submit">Добавить</button>
+        </form>
+      </div>
     </section>
   </body>
 </html>
