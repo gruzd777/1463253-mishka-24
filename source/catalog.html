@@ -16,7 +16,7 @@
         <img class="page-header__logo-img" src="./img/mishka-logo-mobile.svg" alt="Логотип сайта Мишка">
       </picture>
     </a>
-    <nav class="page-header__menu page-header__menu--opened">
+    <nav class="page-header__menu page-header__menu--closed">
       <div class="menu page-header__wrapper">
       <ul class="menu__list">
         <li class="menu__item">
@@ -41,7 +41,7 @@
 
 
   <main class="page-main">
-    <div class="promo-group">
+    <div class="promo-group page__main-promo-group">
       <h1 class="page-main__title title">Каталог товаров</h1>
     </div>
   <section class="page-main__cards">
@@ -95,7 +95,7 @@
             </a>
           </div>
           <div class="card__description">
-            <h3 class="card__title">Большая корзина для игрушек</h3>
+            <h3 class="card__title">Большая корзинка для игрушек</h3>
             <p class="card__row">Диаметр 30 см, высота 30 см</p>
           </div>
           <div class="card__price-group">
@@ -105,45 +105,83 @@
       </ul>
     </section>
     </div>
-  <div class="page-main__video">
-    <h2 class="visually-hidden">Видео-материалы</h2>
-    <h3 class="page-main__video-title">Процесс производства</h3>
-    <p class="page-main__video-image">
-      <img src="./img/video-mobile.jpg" width="260" height="150" alt="Видео-ролик">
-      <img src="./img/play.svg.svg" width="101" height="77" alt="Кнопка проигрывателя">
-    </p>
-    <p class="page-main__video-description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-    <a class="button-link" href="#">Сделать заказ</a>
-  </div>
+  <section class="page-main__video container">
+    <div class="video">
+      <h2 class="visually-hidden">Видео-материалы</h2>
+      <div class="video__title-wrapper">
+        <h3 class="video__title">Процесс производства</h3>
+      </div>
+      <div class="video__image">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="./img/video-desktop.jpg 1x, ./img/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="./img/video-tablet.jpg 1x, ./img/video-tablet@2x.jpg 2x">
+          <img class="card__img" src="./img/video-m.jpg" srcset="./img/video-m@2x.jpg 2x" alt="Видео-ролик">
+        </picture>
+      </div>
+      <div class="video__description-wrapper">
+        <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      </div>
+      <div class="video__link-wrapper">
+        <a class="button-link" href="#">Сделать заказ</a>
+      </div>
+    </div>
+  </section>
 
   </main>
 
-  <footer>
-    <footer class="page-footer">
+  <footer class="page-footer container">
+    <div class="page-footer__group">
+      <a class="logo page-footer__logo">
+        <img src="./img/icons/logo-footer.svg.svg" width="102" height="34" alt="">
+      </a>
       <section class="social">
-  <h2 class="social__title visually-hidden">Мы в социальных сетях</h2>
-  <ul class="social__list">
-    <li class="social__item">
-      <a class="social__link" href="#" aria-label="Мы в инстаграмм"></a>
-    </li>
-    <li class="social__item">
-      <a class="social__link" href="#" aria-label="Мы в фейсбук"></a>
-    </li>
-    <li class="social__item">
-      <a class="social__link" href="#" aria-label="Мы в твиттер"></a>
-    </li>
-  </ul>
-  </section>
-  <p class="page-footer__cop">
-    <span class="page-footer__preview">Разработано</span>
-    <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Лендинг интенсива «HTML и CSS. Адаптивная вёрстка и автоматизация»">
-      <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="#63D1BB"/>
-        </svg>
-    </a>
-  </p>
-  </footer>
-
+        <h2 class="social__title visually-hidden">Мы в социальных сетях</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Мы в инстаграмм">
+              <svg class="social__insta" width="22" height="22">
+                <use href="./img/sprite.svg#insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Мы в фейсбук">
+              <svg class="social__fb" width="15" height="28">
+                <use href="./img/sprite.svg#fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Мы в твиттер">
+              <svg class="social__twitter" width="23" height="20">
+                <use href="./img/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <p class="page-footer__cop">
+        <span class="page-footer__preview">Разработано</span>
+        <a
+          class="page-footer__link"
+          href="https://htmlacademy.ru/intensive/adaptive"
+          aria-label="Лендинг интенсива «HTML и CSS. Адаптивная вёрстка и автоматизация»"
+        >
+          <svg
+            width="27"
+            height="35"
+            viewBox="0 0 27 35"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
+              fill="#63D1BB"
+            />
+          </svg>
+        </a>
+      </p>
+    </div>
   </footer>
 
 </body>
