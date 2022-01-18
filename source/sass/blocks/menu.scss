@@ -32,6 +32,10 @@
   }
 }
 
+.menu__item--desktop-only {
+  display: none;
+}
+
 .menu__link {
   font-weight: bold;
   font-size: 17px;
@@ -129,5 +133,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+
+@media (min-width: $desktop) {
+  .menu__item {
+    margin: 0 0 50px 37px;
+  }
+
+  .menu__item--desktop-only {
+    display: block;
   }
 }

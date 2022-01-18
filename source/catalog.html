@@ -9,34 +9,42 @@
 </head>
 <body class="page-body">
   <header class="page-header page-header--catalog">
-    <a class="logo page-header__logo" href="index.html" aria-label="Возврат на главную страницу">
-      <picture>
-        <source srcset="./img/mishka-logo-desktop.svg" media="(min-width: 1150px)">
-        <source srcset="./img/mishka-logo-tablet.svg" media="(min-width: 768px)">
-        <img class="page-header__logo-img" src="./img/mishka-logo-mobile.svg" alt="Логотип сайта Мишка">
-      </picture>
-    </a>
-    <nav class="page-header__menu page-header__menu--closed">
-      <div class="menu page-header__wrapper">
-      <ul class="menu__list">
-        <li class="menu__item">
-          <a class="menu__link" href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="form.html">Вязание на заказ</a>
-        </li>
-        <li class="menu__item menu__item--search">
-          <a class="menu__link" href="#"><span class="menu__link-text">Поиск по сайту</span></a>
-        </li>
-        <li class="menu__item menu__item--cart">
-          <a class="menu__link" href="#">Корзина: пока пуста</a>
-        </li>
-      </ul>
+    <div class="page-header__container">
+      <a class="logo page-header__logo" href="index.html" aria-label="Возврат на главную страницу">
+        <picture>
+          <source srcset="./img/mishka-logo-desktop.svg" media="(min-width: 1150px)">
+          <source srcset="./img/mishka-logo-tablet.svg" media="(min-width: 768px)">
+          <img class="page-header__logo-img" src="./img/mishka-logo-mobile.svg" alt="Логотип сайта Мишка">
+        </picture>
+      </a>
+      <nav class="page-header__menu page-header__menu--closed">
+        <div class="menu page-header__wrapper">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="menu__item menu__item--search">
+            <a class="menu__link" href="#"><span class="menu__link-text">Поиск по сайту</span></a>
+          </li>
+          <li class="menu__item menu__item--cart">
+            <a class="menu__link" href="#">Корзина: пока пуста</a>
+          </li>
+          <li class="menu__item menu__item--desktop-only">
+            <a class="menu__link" href="#">Распродажа</a>
+          </li>
+          <li class="menu__item menu__item--desktop-only">
+            <a class="menu__link" href="#">Новые поступления</a>
+          </li>
+        </ul>
+      </div>
+        <button class="page-header__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
+      </nav>
+      <p class="page-header__deleviry">Бесплатная доставка по России
+      </p>
     </div>
-      <button class="page-header__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
-    </nav>
-    <p class="page-header__deleviry">Бесплатная доставка по России
-    </p>
   </header>
 
 
@@ -94,7 +102,7 @@
               </picture>
             </a>
           </div>
-          <div class="card__description">
+          <div class="card__description card__description--big-basket">
             <h3 class="card__title">Большая корзинка для игрушек</h3>
             <p class="card__row">Диаметр 30 см, высота 30 см</p>
           </div>
@@ -105,24 +113,26 @@
       </ul>
     </section>
     </div>
-  <section class="page-main__video container">
-    <div class="video">
-      <h2 class="visually-hidden">Видео-материалы</h2>
-      <div class="video__title-wrapper">
-        <h3 class="video__title">Процесс производства</h3>
-      </div>
-      <div class="video__image">
-        <picture>
-          <source media="(min-width: 1150px)" srcset="./img/video-desktop.jpg 1x, ./img/video-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="./img/video-tablet.jpg 1x, ./img/video-tablet@2x.jpg 2x">
-          <img class="card__img" src="./img/video-m.jpg" srcset="./img/video-m@2x.jpg 2x" alt="Видео-ролик">
-        </picture>
-      </div>
-      <div class="video__description-wrapper">
-        <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-      </div>
-      <div class="video__link-wrapper">
-        <a class="button-link" href="#">Сделать заказ</a>
+  <section class="page-main__video">
+    <div class="container">
+      <div class="video">
+        <h2 class="visually-hidden">Видео-материалы</h2>
+        <div class="video__title-wrapper">
+          <h3 class="video__title">Процесс производства</h3>
+        </div>
+        <div class="video__image">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="./img/video-desktop.jpg 1x, ./img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="./img/video-tablet.jpg 1x, ./img/video-tablet@2x.jpg 2x">
+            <img class="card__img" src="./img/video-m.jpg" srcset="./img/video-m@2x.jpg 2x" alt="Видео-ролик">
+          </picture>
+        </div>
+        <div class="video__description-wrapper">
+          <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        </div>
+        <div class="video__link-wrapper">
+          <a class="button-link" href="#">Сделать заказ</a>
+        </div>
       </div>
     </div>
   </section>

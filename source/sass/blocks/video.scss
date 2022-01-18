@@ -107,3 +107,50 @@
     margin: 0 0 44px 0;
   }
 }
+
+
+@media (min-width: $desktop) {
+  .video {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .video__title-wrapper {
+    padding: 66px 0 0 79px;
+    margin: 0 0 1px 0;
+    align-self: center;
+
+    &::after {
+      top: 17px;
+      left: 79px;
+    }
+  }
+
+  .video__title {
+    width: 200px;
+    margin: 0;
+  }
+
+  .video__description-wrapper {
+    padding: 0 0 0 79px;
+    margin: 0;
+  }
+
+  .video__description {
+    width: 287px;
+  }
+
+  .video__image {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    margin: 0;
+    width: 682px;
+  }
+
+  .video__link-wrapper {
+    margin: 0 0 7px 0;
+    width: 230px;
+    padding: 0 0 0 79px;
+  }
+}
