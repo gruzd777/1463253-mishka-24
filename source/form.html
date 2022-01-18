@@ -8,35 +8,43 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body class="page-body">
-    <header class="page-header">
-      <a class="logo page-header__logo" href="index.html" aria-label="Возврат на главную страницу">
-        <picture>
-          <source srcset="./img/mishka-logo-desktop.svg" media="(min-width: 1150px)">
-          <source srcset="./img/mishka-logo-tablet.svg" media="(min-width: 768px)">
-          <img class="page-header__logo-img" src="./img/mishka-logo-mobile.svg" alt="Логотип сайта Мишка">
-        </picture>
-      </a>
-      <nav class="page-header__menu page-header__menu--opened">
-        <div class="menu page-header__wrapper">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a class="menu__link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="form.html">Вязание на заказ</a>
-          </li>
-          <li class="menu__item menu__item--search">
-            <a class="menu__link" href="#"><span class="menu__link-text">Поиск по сайту</span></a>
-          </li>
-          <li class="menu__item menu__item--cart">
-            <a class="menu__link" href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
+    <header class="page-header page-header--catalog">
+      <div class="page-header__container">
+        <a class="logo page-header__logo" href="index.html" aria-label="Возврат на главную страницу">
+          <picture>
+            <source srcset="./img/mishka-logo-desktop.svg" media="(min-width: 1150px)">
+            <source srcset="./img/mishka-logo-tablet.svg" media="(min-width: 768px)">
+            <img class="page-header__logo-img" src="./img/mishka-logo-mobile.svg" alt="Логотип сайта Мишка">
+          </picture>
+        </a>
+        <nav class="page-header__menu page-header__menu--closed">
+          <div class="menu page-header__wrapper">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="menu__item menu__item--search">
+              <a class="menu__link" href="#"><span class="menu__link-text">Поиск по сайту</span></a>
+            </li>
+            <li class="menu__item menu__item--cart">
+              <a class="menu__link" href="#">Корзина: пока пуста</a>
+            </li>
+            <li class="menu__item menu__item--desktop-only">
+              <a class="menu__link" href="#">Распродажа</a>
+            </li>
+            <li class="menu__item menu__item--desktop-only">
+              <a class="menu__link" href="#">Новые поступления</a>
+            </li>
+          </ul>
+        </div>
+          <button class="page-header__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
+        </nav>
+        <p class="page-header__deleviry">Бесплатная доставка по России
+        </p>
       </div>
-        <button class="page-header__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
-      </nav>
-      <p class="page-header__deleviry">Бесплатная доставка по России
-      </p>
     </header>
 
     <main class="page-main">
