@@ -33,10 +33,16 @@
     height: 6px;
     background: url("../../img/zigzag-line.svg") no-repeat;
   }
+}
 
-  @media (min-width: $tablet) {
+@media (min-width: $tablet) {
+  .button-link {
     font-size: 17px;
     line-height: 20px;
   }
-}
 
+  .button-link--index-only {
+    width: 292px;
+    margin: 0;
+  }
+}

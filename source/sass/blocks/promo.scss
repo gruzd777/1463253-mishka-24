@@ -1,23 +1,18 @@
 .promo {
-  background: url("../../img/promo-mobile.png") no-repeat center -18px;
-  padding: 72px 0 0 0;
-  background-size: contain;
+  // background: url("../../img/promo-mobile.png") no-repeat center -18px;
+  // padding: 72px 0 0 0;
 
-  @media (min-resolution: 2dppx) {
-    background: url("../../img/promo-mobile@2x.png") no-repeat center -18px;
-    background-size: contain;
-  }
+  // @media (min-resolution: 2dppx) {
+  //   background: url("../../img/promo-mobile@2x.png") no-repeat center -18px;
+  // }
 
-  @media (min-width: $tablet) {
-    background: url("../../img/promo-tablet-desktop.png") no-repeat top center;
-    background-size: contain;
-  }
+  // @media (min-width: $tablet) {
+  //   background: url("../../img/promo-tablet-desktop.png") no-repeat top center;
+  // }
 
-  @media (min-width: $tablet) and (min-resolution: 2dppx) {
-    background: url("../../img/promo-tablet-desktop@2x.png") no-repeat top center;
-    background-size: contain;
+  // @media (min-width: $tablet) and (min-resolution: 2dppx) {
+  //   background: url("../../img/promo-tablet-desktop@2x.png") no-repeat top center;
   }
-}
 
 .promo__title {
   font-weight: 700;
@@ -85,16 +80,22 @@
 }
 
 @media (min-width: $tablet) {
+  .promo {
+    padding: 110px 0 0 0;
+  }
+
   .promo__title {
     font-size: 43px;
     line-height: 50px;
     width: 500px;
+    padding: 0 0 371px 0;
   }
 
   .promo__group {
     display: flex;
     position: relative;
     padding: 0 50px;
+    margin: 0 0 42px 0;
 
     &::before {
       content: "";
@@ -115,5 +116,15 @@
   .promo__link {
     font-size: 20px;
     line-height: 30px;
+    padding: 25px 0 45px 36px;
+  }
+
+  .promo__link--light::before {
+    top: 30px;
+  }
+
+  .promo__link--dark::before {
+    top: 32px;
+    right: 34px;
   }
 }
