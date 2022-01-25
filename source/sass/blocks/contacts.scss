@@ -62,6 +62,10 @@
   margin: 0 0 42px 0;
 }
 
+.contacts__iframe {
+  width: 100%;
+}
+
 @media (min-width: $tablet) {
   .contacts {
     position: relative;

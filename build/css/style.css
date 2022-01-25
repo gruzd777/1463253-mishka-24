@@ -853,6 +853,10 @@ a {
   }
 }
 
+.reviews__text {
+  margin: 0;
+}
+
 .reviews__person {
   margin: 34px 0 3px 0;
   font-weight: 700;
@@ -1541,6 +1545,10 @@ a {
   margin: 0 0 42px 0;
 }
 
+.contacts__iframe {
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   .contacts {
     position: relative;
@@ -1686,7 +1694,7 @@ a {
   }
 }
 .modal {
-  display: block;
+  display: none;
 }
 
 .modal__container {
@@ -1888,7 +1896,7 @@ a {
   margin: 0 0 30px 0;
 }
 
-.card__img {
+.card__picture {
   display: block;
   width: 100%;
 }
@@ -2072,7 +2080,7 @@ a {
   background: url("../../img/icons/play.svg") no-repeat;
 }
 
-.video__img {
+.video__picture {
   display: block;
   width: 100%;
 }
