@@ -6,11 +6,11 @@
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
+  margin: 0 0 27px 0;
 }
 
 .contacts__group {
-  display: flex;
-  flex-direction: column;
+  margin: 0 0 62px 0;
 }
 
 .contacts__link {
@@ -19,15 +19,106 @@
   font-size: 14px;
   line-height: 30px;
   color: #444444;
+  display: block;
+}
+
+.contacts__address {
+  display: flex;
+  margin: 0 0 30px 0;
+}
+
+.contacts__address-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  margin: 0 33px 0 0;
 }
 
 .contacts__row {
+  display: flex;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
   color: #444444;
+  margin: 0;
+}
+
+.contacts__row-1 {
+  margin: 0;
+}
+
+.contacts__row-2 {
+  margin: 0 0 0 34px;
+
+  @media (min-width: 321px) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .contacts__map {
   margin: 0 0 42px 0;
+}
+
+@media (min-width: $tablet) {
+  .contacts {
+    position: relative;
+    padding: 0 0 59px 0;
+  }
+
+  .contacts::after {
+    content: "";
+    position: absolute;
+    width: 47px;
+    height: 81px;
+    top: -23px;
+    right: 53px;
+    background: url("../../img/icons/flag.svg") no-repeat;
+  }
+
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin: 0 0 50px 0;
+  }
+
+  .contacts__group {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 47px 0;
+  }
+
+  .contacts__address {
+    display: flex;
+    margin: 0 50px 30px 0;
+  }
+
+  .contacts__address-title {
+    font-size: 17px;
+    margin: 0 25px 0 0;
+  }
+
+  .contacts__row {
+    font-size: 17px;
+    line-height: 30px;
+    margin: 0;
+    width: 50%;
+  }
+
+  .contacts__row-2 {
+    margin: 0 0 0 25px;
+    width: 220px;
+  }
+
+  .contacts__link {
+    font-size: 17px;
+    line-height: 30px;
+    margin: 0;
+  }
+
+  .contacts__map {
+    margin: 0 0 58px 0;
+  }
 }

@@ -1,0 +1,156 @@
+.video {
+  border: 1px solid #ececec;
+  padding: 21px 0 0 0;
+}
+
+.video__title-wrapper {
+  padding: 0 34px;
+  position: relative;
+  margin: 0 0 26px 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 22px;
+    top: 12px;
+    left: 33px;
+    background: url(../../img/icons/video.svg) no-repeat;
+  }
+}
+
+.video__title {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  width: 130px;
+  margin: 0 0 0 56px;
+}
+
+.video__image {
+  position: relative;
+  margin: 0 0 36px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 102px;
+    height: 78px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url("../../img/icons/play.svg") no-repeat;
+  }
+}
+
+.video__img {
+  display: block;
+  width: 100%;
+}
+
+.video__description-wrapper {
+  padding: 0 0 0 34px;
+  margin: 0 0 40px 0;
+}
+
+.video__description {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: #444444;
+  margin: 0;
+}
+
+.video__link-wrapper {
+  padding: 0 34px;
+  margin: 0 0 30px 0;
+}
+
+@media (min-width: $tablet) {
+  .video {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .video__title-wrapper::after {
+    top: 0;
+    left: 41px;
+  }
+
+  .video__title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 0 0 72px;
+    width: 300px;
+  }
+
+  .video__image {
+    order: -1;
+    margin: 0 0 42px 0;
+  }
+
+  .video__description-wrapper {
+    padding: 0 40px 0 39px;
+    margin: 0 0 40px 0;
+  }
+
+  .video__description {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .video__link-wrapper {
+    padding: 0 41px;
+    margin: 0 0 44px 0;
+  }
+}
+
+
+@media (min-width: $desktop) {
+  .video {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .video__title-wrapper {
+    padding: 66px 0 0 79px;
+    margin: 0 0 1px 0;
+    align-self: center;
+
+    &::after {
+      top: 17px;
+      left: 79px;
+    }
+  }
+
+  .video__title {
+    width: 200px;
+    margin: 0;
+  }
+
+  .video__description-wrapper {
+    padding: 0 0 0 79px;
+    margin: 0;
+  }
+
+  .video__description {
+    width: 287px;
+  }
+
+  .video__image {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    margin: 0;
+    width: 682px;
+  }
+
+  .video__link-wrapper {
+    margin: 0 0 7px 0;
+    width: 230px;
+    padding: 0 0 0 79px;
+  }
+}

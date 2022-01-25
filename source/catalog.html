@@ -8,108 +8,190 @@
   <title>HTML Academy: Мишка</title>
 </head>
 <body class="page-body">
-  <header class="page-header">
-    <a class="page-header__logo logo" href="index.html" aria-label="Переход на главную страницу">
-      <img class="logo" src="./img/mishka-logo-mobile.svg" width="86" height="35" alt="">
-    </a>
-    <nav class="page-header__menu menu">
-      <ul class="menu__list">
-      <li class="menu__item">
-        <a class="menu__link" href="catalog.html">Каталог товаров</a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="form.html">Вязание на  заказ</a>
-      </li>
-      <li class="menu__item">
-        <a  class="menu__link" href="#">Поиск по сайту</a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="#">Корзина: пока пуста</a>
-      </li>
-    </ul>
-    </nav>
-
+  <header class="page-header page-header--catalog">
+    <div class="page-header__container">
+      <a class="logo page-header__logo" href="index.html" aria-label="Возврат на главную страницу">
+        <picture>
+          <source srcset="./img/mishka-logo-desktop.svg" media="(min-width: 1150px)">
+          <source srcset="./img/mishka-logo-tablet.svg" media="(min-width: 768px)">
+          <img class="page-header__logo-img" src="./img/mishka-logo-mobile.svg" alt="Логотип сайта Мишка">
+        </picture>
+      </a>
+      <nav class="page-header__menu page-header__menu--closed">
+        <div class="menu page-header__wrapper">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="menu__item menu__item--search">
+            <a class="menu__link" href="#"><span class="menu__link-text">Поиск по сайту</span></a>
+          </li>
+          <li class="menu__item menu__item--cart">
+            <a class="menu__link" href="#">Корзина: пока пуста</a>
+          </li>
+          <li class="menu__item menu__item--desktop-only">
+            <a class="menu__link" href="#">Распродажа</a>
+          </li>
+          <li class="menu__item menu__item--desktop-only">
+            <a class="menu__link" href="#">Новые поступления</a>
+          </li>
+        </ul>
+      </div>
+        <button class="page-header__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
+      </nav>
+      <p class="page-header__deleviry">Бесплатная доставка по России
+      </p>
+    </div>
   </header>
 
 
-  <main class="page__main">
-    <section class="catalog-promo">
-      <h1 class="catalog-promo__title title">Каталог товаров</h1>
-      </section>
-  <section class="card">
-    <h2 class="visually hidden">Список карточек товаров</h2>
-    <ul class="card__list">
-      <li class="card__item">
-        <div class="card__image">
-          <a class="card__link" href="#" aria-label="Перейти на страницу с подробным описанием товара">
-            <img src="img/cards/rabbit-m.png" width="260" height="195" alt="Зайчик-попрыгайчик">
-          </a>
-        </вшм>
-        <h3 class="card__title">Зайчик-попрыгайчик</h3>
-        <p class="card__row">Рост 30 см, вес 200 г</p>
-        <p class="card__row">1 200 руб.</p>
-      </li>
-      <li class="card__item">
-        <div class="card__image">
-          <a class="card__link" href="#" aria-label="Перейти на страницу с подробным описанием товара">
-          <img src="img/cards/basket-m.png" width="260" height="195" alt="Корзинка для белья">
-        </a>
+  <main class="page-main">
+    <div class="promo-group page__main-promo-group">
+      <h1 class="page-main__title title">Каталог товаров</h1>
+    </div>
+  <section class="page-main__cards">
+    <div class="container">
+      <h2 class="visually-hidden">Список карточек товаров</h2>
+      <ul class="page-main__cards-list">
+        <li class="card">
+          <div class="card__image">
+            <a class="card__link" href="#" aria-label="Перейти на страницу с подробным описанием товара">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="./img/rabbit-desktop.jpg 1x, ./img/rabbit-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/rabbit-tablet.jpg 1x, ./img/rabbit-tablet@2x.jpg 2x">
+                <img class="card__img" src="./img/rabbit-m.jpg" srcset="./img/rabbit-m@2x.jpg 2x" alt="Зайчик-попрыгайчик">
+              </picture>
+            </a>
+          </div>
+          <div class="card__description">
+            <h3 class="card__title">Зайчик-попрыгайчик</h3>
+            <p class="card__row">Рост 30 см, вес 200 г</p>
+          </div>
+          <div class="card__price-group">
+            <p class="card__price">1 200 руб.</p>
+          </div>
+        </li>
+        <li class="card">
+          <div class="card__image">
+            <a class="card__link" href="#" aria-label="Перейти на страницу с подробным описанием товара">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="./img/basket-desktop.jpg 1x, ./img/basket-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/basket-tablet.jpg 1x, ./img/basket-tablet@2x.jpg 2x">
+                <img class="card__img" src="./img/basket-m.jpg" srcset="./img/basket-m@2x.jpg 2x" alt="Корзинка для белья">
+              </picture>
+            </a>
+          </div>
+          <div class="card__description">
+            <h3 class="card__title">Корзинка для белья</h3>
+            <p class="card__row">Диаметр 15 см, высота 10 см</p>
+          </div>
+          <div class="card__price-group">
+            <p class="card__price">690 руб.</p>
+          </div>
+        </li>
+        <li class="card">
+          <div class="card__image">
+            <a class="card__link" href="#" aria-label="Перейти на страницу с подробным описанием товара">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="./img/big-basket-desktop.jpg 1x, ./img/big-basket-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/big-basket-tablet.jpg 1x, ./img/big-basket-tablet@2x.jpg 2x">
+                <img class="card__img" src="./img/big-basket-m.jpg" srcset="./img/big-basket-m@2x.jpg 2x" alt="Большая корзина для игрушек">
+              </picture>
+            </a>
+          </div>
+          <div class="card__description card__description--big-basket">
+            <h3 class="card__title">Большая корзинка для игрушек</h3>
+            <p class="card__row">Диаметр 30 см, высота 30 см</p>
+          </div>
+          <div class="card__price-group">
+            <p class="card__price">1 500 руб.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    </div>
+  <section class="page-main__video">
+    <div class="container">
+      <div class="video">
+        <h2 class="visually-hidden">Видео-материалы</h2>
+        <div class="video__title-wrapper">
+          <h3 class="video__title">Процесс производства</h3>
         </div>
-        <h3 class="card__title">Корзинка для белья</h3>
-        <p class="card__row">Диаметр 15 см, высота 10 см</p>
-        <p class="card__row">690 руб.</p>
-      </li>
-      <li class="card__item">
-        <div class="card__image">
-          <a class="card__link" href="#" aria-label="Перейти на страницу с подробным описанием товара">
-            <img src="img/cards/big-basket-m.png" width="260" height="195" alt="Большая корзинка для игрушек">
-          </a>
+        <div class="video__image">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="./img/video-desktop.jpg 1x, ./img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="./img/video-tablet.jpg 1x, ./img/video-tablet@2x.jpg 2x">
+            <img class="card__img" src="./img/video-m.jpg" srcset="./img/video-m@2x.jpg 2x" alt="Видео-ролик">
+          </picture>
         </div>
-        <h3 class="card__title">Большая корзинка для игрушек</h3>
-        <p class="card__row">Диаметр 30 см, высота 30 см</p>
-        <p class="card__row">1 500 руб.</p>
-      </li>
-    </ul>
+        <div class="video__description-wrapper">
+          <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        </div>
+        <div class="video__link-wrapper">
+          <a class="button-link" href="#">Сделать заказ</a>
+        </div>
+      </div>
+    </div>
   </section>
-  <div class="page-main__video">
-    <h2 class="visually-hidden">Видео-материалы</h2>
-    <h3 class="page-main__video-title">Процесс производства</h3>
-    <p class="page-main__video-image">
-      <img src="./img/video-mobile.jpg" width="260" height="150" alt="Видео-ролик">
-      <img src="./img/play.svg.svg" width="101" height="77" alt="Кнопка проигрывателя">
-    </p>
-    <p class="page-main__video-description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-    <a class="button-link" href="#">Сделать заказ</a>
-  </div>
 
   </main>
 
-  <footer>
-    <footer class="page-footer">
+  <footer class="page-footer container">
+    <div class="page-footer__group">
+      <a class="logo page-footer__logo">
+        <img src="./img/icons/logo-footer.svg.svg" width="102" height="34" alt="">
+      </a>
       <section class="social">
-  <h2 class="social__title visually-hidden">Мы в социальных сетях</h2>
-  <ul class="social__list">
-    <li class="social__item">
-      <a class="social__link" href="#" aria-label="Мы в инстаграмм"></a>
-    </li>
-    <li class="social__item">
-      <a class="social__link" href="#" aria-label="Мы в фейсбук"></a>
-    </li>
-    <li class="social__item">
-      <a class="social__link" href="#" aria-label="Мы в твиттер"></a>
-    </li>
-  </ul>
-  </section>
-  <p class="page-footer__cop">
-    <span class="page-footer__preview">Разработано</span>
-    <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Лендинг интенсива «HTML и CSS. Адаптивная вёрстка и автоматизация»">
-      <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="#63D1BB"/>
-        </svg>
-    </a>
-  </p>
-  </footer>
-
+        <h2 class="social__title visually-hidden">Мы в социальных сетях</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Мы в инстаграмм">
+              <svg class="social__insta" width="22" height="22">
+                <use href="./img/sprite.svg#insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Мы в фейсбук">
+              <svg class="social__fb" width="15" height="28">
+                <use href="./img/sprite.svg#fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Мы в твиттер">
+              <svg class="social__twitter" width="23" height="20">
+                <use href="./img/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <p class="page-footer__cop">
+        <span class="page-footer__preview">Разработано</span>
+        <a
+          class="page-footer__link"
+          href="https://htmlacademy.ru/intensive/adaptive"
+          aria-label="Лендинг интенсива «HTML и CSS. Адаптивная вёрстка и автоматизация»"
+        >
+          <svg
+            width="27"
+            height="35"
+            viewBox="0 0 27 35"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
+              fill="#63D1BB"
+            />
+          </svg>
+        </a>
+      </p>
+    </div>
   </footer>
 
 </body>

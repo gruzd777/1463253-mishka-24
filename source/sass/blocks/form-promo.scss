@@ -1,34 +1,3 @@
-.form-promo__group {
-  background: #f1f1f1;
-  padding: 73px 0 74px 0;
-  margin: 0 0 15px 0;
-  position: relative;
-
-  @media (min-width: $tablet) {
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 24px;
-      background: url("../../img/icons/zigzag-tablet.svg");
-    }
-  }
-
-  @media (min-width: $desktop) {
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 24px;
-      background: url("../../img/icons/zigzag-desktop.svg");
-    }
-  }
-}
-
 .form-promo__title {
   margin: 0 auto;
 }
@@ -39,9 +8,21 @@
   font-size: 13px;
   line-height: 24px;
   color: #444444;
+}
 
-  @media (min-width: $tablet) {
+@media (min-width: $tablet) {
+  .form-promo__group {
+    background: #f1f1f1;
+    padding: 55px 0 86px 0;
+    margin: 0 0 15px 0;
+    position: relative;
+  }
+
+  .form-promo__heading {
     font-size: 17px;
     line-height: 30px;
+    padding: 40px 0 0 0;
+    margin: 0 0 81px 0;
+    width: 625px;
   }
 }

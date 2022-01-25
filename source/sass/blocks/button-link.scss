@@ -35,3 +35,18 @@
   }
 }
 
+@media (min-width: $tablet) {
+  .button-link {
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  .button-link--index-only {
+    width: 292px;
+    margin: 0;
+  }
+
+  .button-link--index-tablet {
+    width: 230px;
+  }
+}

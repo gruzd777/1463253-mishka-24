@@ -105,3 +105,80 @@
   margin: 20px auto 24px auto;
   text-align: center;
 }
+
+@media (min-width: $tablet) {
+  .product {
+    margin: 0 0 119px 0;
+  }
+
+  .product::after {
+    height: 17px;
+    background: url("../../img/icons/zigzag-index-tablet.svg");
+    bottom: -63px;
+  }
+
+  .product__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product__group-1 {
+    display: flex;
+    margin: 0 0 37px 0;
+  }
+
+  .product__group-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .product__grid-2 {
+    grid-column: 2/3;
+    grid-row: 1/-1;
+  }
+
+  .product__subtitle {
+    font-size: 43px;
+    line-height: 50px;
+    max-width: 440px;
+    margin: 0 142px 0 0;
+  }
+
+  .product__row--green {
+    font-size: 17px;
+    line-height: 17px;
+    width: min-content;
+    margin: 0;
+    text-align: center;
+    padding: 5px 0 0 0;
+  }
+
+  .product__row--small {
+    margin: 0 0 48px 0;
+    font-size: 17px;
+    line-height: 30px;
+    max-width: 290px;
+  }
+
+  .product__list {
+    margin: 0;
+  }
+
+  .product__price {
+    margin: 0;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0 46px 0 0;
+  }
+
+  .product__card {
+    margin: 13px 0 0 0;
+  }
+
+  .product__grid-3 {
+    padding: 14px 0 0 0;
+    display: flex;
+    flex-direction: column;
+  }
+}

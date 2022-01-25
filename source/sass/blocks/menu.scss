@@ -30,26 +30,10 @@
       display: none;
     }
   }
+}
 
-  &--search::after {
-    content: "";
-    background: url("../../img/icons/search.svg.svg");
-    width: 18px;
-    height: 18px;
-    position: absolute;
-    top: 31px;
-    left: -44px;
-  }
-
-  &--cart::after {
-    content: "";
-    background: url("../../img/icons/basket.svg");
-    width: 21px;
-    height: 18px;
-    position: absolute;
-    top: 31px;
-    left: -46px;
-  }
+.menu__item--desktop-only {
+  display: none;
 }
 
 .menu__link {
@@ -57,28 +41,108 @@
   font-size: 17px;
   line-height: 24px;
   color: #000000;
+  position: relative;
+}
+
+.menu__item--search .menu__link::after {
+  content: "";
+  background: url("../../img/icons/search.svg.svg") no-repeat top left;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 3px;
+  left: -44px;
+}
+
+.menu__item--cart .menu__link::after {
+  content: "";
+  background: url("../../img/icons/basket.svg") no-repeat top left;
+  width: 21px;
+  height: 18px;
+  position: absolute;
+  top: 3px;
+  left: -46px;
 }
 
 @media (min-width: $tablet) {
+  .menu {
+    width: 370px;
+    box-sizing: border-box;
+    padding-left: 50px;
+    padding-top: 19px;
+  }
+
   .menu__list {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: 0;
-  }
+    margin: 0 0 0 -37px;
+    padding: 0;
+}
 
   .menu__item {
     border: none;
-    outline: 2px solid tomato;
-    outline-offset: -2px;
+    padding: 0;
+    margin: 0 0 0 37px;
+  }
 
-    &:first-child {
-      width: 84px;
-    }
+  .menu__link {
+    font-size: 15px;
+    line-height: 24px;
+  }
 
-    &:last-child {
-      border: none;
-      flex-grow: 1;
-    }
+  .menu__item--cart {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .menu__item--cart .menu__link::after {
+    top: 35px;
+    left: 31px;
+  }
+
+  .menu__item--search .menu__link::after {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .menu__item--search {
+    position: absolute;
+    right: 313px;
+    top: 0;
+  }
+
+  .menu__item--search .menu__link-text {
+    display: none;
+  }
+
+  .menu__item--cart .menu__link {
+    padding: 33px 51px 33px 82px;
+    display: block;
+    font-size: 17px;
+  }
+
+  .menu__item--search .menu__link {
+    padding: 0;
+    width: 82px;
+    height: 90px;
+    border-left: 2px solid rgba($color: #000000, $alpha: 0.1);
+    border-right: 2px solid rgba($color: #000000, $alpha: 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+@media (min-width: $desktop) {
+  .menu__item {
+    margin: 0 0 50px 37px;
+  }
+
+  .menu__item--desktop-only {
+    display: block;
   }
 }

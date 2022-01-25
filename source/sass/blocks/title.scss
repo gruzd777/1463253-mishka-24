@@ -11,4 +11,10 @@
     margin: 0 auto;
     text-align: center;
   }
+
+  @media (min-width: $desktop) {
+    font-weight: bold;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

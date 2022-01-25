@@ -91,3 +91,25 @@
   height: 32px;
   background: url("../../img/icons/present.svg") no-repeat;
 }
+
+@media (min-width: $tablet) {
+  .about__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin: 0 0 100px 0;
+    width: 100%;
+  }
+
+  .about__list {
+    font-size: 20px;
+    line-height: 22px;
+    max-width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about__item {
+    width: 50%;
+  }
+}

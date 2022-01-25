@@ -1,0 +1,40 @@
+.page-main {
+
+}
+
+.page__main-promo-group {
+  padding: 54px 0 55px 0;
+  margin: 0 0 30px 0;
+}
+
+.page-main__title {
+
+}
+
+.page-main__cards {
+
+}
+
+.page-main__cards-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-main__video {
+  margin: 0 0 60px 0;
+}
+
+@media (min-width: $tablet) {
+  .page__main-promo-group {
+    padding: 56px 0 86px 0;
+    margin: 0 0 67px 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-main__cards-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

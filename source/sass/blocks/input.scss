@@ -13,27 +13,18 @@
   box-sizing: border-box;
 
   &:hover,
-  &:hover,
-  &:hover {
+  &:active,
+  &:focus {
     border-bottom: 2px solid #62d1ba;
+    outline: none;
   }
 
   @media (min-width: $tablet) {
     font-size: 19px;
     line-height: 18px;
+    flex-grow: 1;
+    padding: 0 0 0 17px;
+    width: 100%;
   }
 }
 
-// .input[type="email"] {
-//   position: relative;
-
-//   &::before {
-//     content: "";
-//     width: 25px;
-//     height: 24px;
-//     top: 0;
-//     left: 0;
-//     position: absolute;
-//     background: url("../../img/icons/mail.svg") no-repeat;
-//   }
-// }

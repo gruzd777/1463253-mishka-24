@@ -32,3 +32,13 @@
     margin: 0;
   }
 }
+
+@media (min-width: $tablet) {
+  .social {
+    margin: 0 122px 0px 0;
+  }
+
+  .social__list::before {
+    display: none;
+  }
+}
