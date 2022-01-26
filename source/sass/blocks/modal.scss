@@ -2,6 +2,10 @@
   display: none;
 }
 
+.modal--visible {
+  display: block;
+}
+
 .modal__container {
   width: 100vw;
   position: fixed;
@@ -116,6 +120,7 @@
   background: #62d1ba;
   min-width: 260px;
   width: 100%;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet) {

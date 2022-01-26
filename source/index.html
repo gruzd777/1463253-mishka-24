@@ -17,9 +17,9 @@
             <img class="page-header__logo-img" src="./img/mishka-logo-mobile.svg" alt="Логотип сайта Мишка">
           </picture>
         </a>
-        <nav class="page-header__menu page-header__menu--closed">
+        <nav class="page-header__menu">
           <div class="menu page-header__wrapper">
-          <ul class="menu__list">
+          <ul class="menu__list page-header__list">
             <li class="menu__item">
               <a class="menu__link" href="catalog.html">Каталог товаров</a>
             </li>
@@ -93,6 +93,9 @@
             <div class="product__grid-2">
               <figure class="product__card">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/hat-desktop.webp 1x, img/hat-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/hat-tablet.webp 1x, img/hat-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/hat-mobile.webp 1x, img/hat-mobile@2x.webp 2x">
                   <source media="(min-width: 1150px)" srcset="./img/hat-desktop.jpg 1x, ./img/hat-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="./img/hat-tablet.jpg 1x, ./img/hat-tablet@2x.jpg 2x">
                   <img class="product__img" src="./img/hat-mobile.jpg" srcset="./img/hat-mobile@2x.jpg 2x" alt="Серо-зелёно-розовая вязаная корзиночка">
@@ -101,7 +104,7 @@
             </div>
             <div class="product__grid-3">
               <div class="product__price">Цена: 990 руб.</div>
-              <a class="button-link button-link--index-only" href="#">Заказать</a>
+              <a class="button-link order-button button-link--index-only" href="#">Заказать</a>
             </div>
           </div>
         </div>
@@ -130,9 +133,27 @@
                 Анастасия Красильникова</p>
               <a class="reviews__link" href="">@misssssiskras</a>
           </li>
+          <li class="reviews__item">
+            <p class="reviews__text"> !! Я молодая мама, но всё равно фотографии не набирали и близко такого
+              количества лайков, как <br> у популярных инстамамочек. <br> В отчаянии, я
+              накупила аксессуаров и игрушек в Мишке, <br> и мои фотографии сразу стали
+              более стильными, а также набирают больше лайков!</p>
+              <p class="reviews__person">
+                Анастасия Красильникова</p>
+              <a class="reviews__link" href="">@misssssiskras</a>
+          </li>
+          <li class="reviews__item">
+            <p class="reviews__text">  !!! Я молодая мама, но всё равно фотографии не набирали и близко такого
+              количества лайков, как <br> у популярных инстамамочек. <br> В отчаянии, я
+              накупила аксессуаров и игрушек в Мишке, <br> и мои фотографии сразу стали
+              более стильными, а также набирают больше лайков!</p>
+              <p class="reviews__person">
+                Анастасия Красильникова</p>
+              <a class="reviews__link" href="">@misssssiskras</a>
+          </li>
         </ul>
         <div class="reviews__buttons">
-          <button class="reviews__btn reviews__btn--back " type="button" aria-label="Назад">
+          <button class="reviews__btn reviews__btn--back" type="button" aria-label="Назад">
           </button>
           <button class="reviews__btn reviews__btn--next" type="button" aria-label="Вперёд">
           </button>
@@ -245,5 +266,6 @@
         </div>
       </div>
     </section>
+    <script src="./js/script.js"></script>
   </body>
 </html>
