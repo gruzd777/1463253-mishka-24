@@ -1,6 +1,4 @@
 .social {
-  // outline: 5px solid rgba(0, 0, 255, 0.7);
-  // outline-offset: -5px;
   margin: 0 0 36px 0;
 }
 
@@ -33,9 +31,21 @@
   }
 }
 
+.social__icon {
+  fill: #231f20;
+}
+
+.social__icon:hover {
+  fill: #46c1ae;
+}
+
+.social__icon:active {
+  fill: rgba($color: #46c1ae, $alpha: 0.3);
+}
+
 @media (min-width: $tablet) {
   .social {
-    margin: 0 122px 0px 0;
+    margin: 0;
   }
 
   .social__list::before {

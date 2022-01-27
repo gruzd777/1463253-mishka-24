@@ -6,6 +6,15 @@
 
 .page-footer__logo {
   display: none;
+  fill: #000000;
+}
+
+.page-footer__logo:hover {
+  fill: #46c1ae;
+}
+
+.page-footer__logo:active {
+  fill: rgba($color: #46c1ae, $alpha: 0.3);
 }
 
 .page-footer__cop {
@@ -22,20 +31,32 @@
   margin: 0 25px 0 0;
 }
 
+.page-footer__icon {
+  fill: #63d1bb;
+}
+
+.page-footer__icon:hover {
+  fill: rgba($color: #46C1ae, $alpha: 1.0);
+}
+
+.page-footer__icon:active {
+  fill: rgba($color: #46c1ae, $alpha: 0.3);
+}
+
 @media (min-width: $tablet) {
   .page-footer {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px;
   }
 
   .page-footer__group {
     display: flex;
-    margin: 0 auto;
+    justify-content: space-between;
+    align-items: baseline;
   }
 
   .page-footer__logo {
     display: block;
-    margin: 0 137px 0 0;
+    margin: 0;
   }
 
   .page-footer__cop {

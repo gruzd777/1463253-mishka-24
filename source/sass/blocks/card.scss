@@ -5,11 +5,11 @@
 
   &:hover,
   &:focus {
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
   }
 
   &:active {
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -60,16 +60,32 @@
   font-weight: bold;
   font-size: 15px;
   line-height: 24px;
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   width: 20px;
+  //   height: 19px;
+  //   top: -1px;
+  //   right: 27px;
+  //   background: url("../../img/icons/cart-catalog.svg") no-repeat;
+  // }
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 19px;
-    top: -1px;
-    right: 27px;
-    background: url("../../img/icons/cart-catalog.svg") no-repeat;
-  }
+.card__icon {
+  fill: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  width: 20px;
+  height: 19px;
+  top: -1px;
+  right: 27px;
+}
+
+.card__icon:hover {
+  fill: #63d1bb;
+}
+
+.card__icon:active {
+  fill: rgba($color: #63d1bb, $alpha: 0.3)
 }
 
 .card__description {
