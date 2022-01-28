@@ -7,7 +7,6 @@
   line-height: 24px;
   display: inline-flex;
   flex-direction: column;
-  display: none;
 }
 
 .menu__item {
@@ -44,24 +43,39 @@
   position: relative;
 }
 
-.menu__item--search .menu__link::after {
-  content: "";
-  background: url("../../img/icons/search.svg.svg") no-repeat top left;
+.menu__icon {
+  fill: rgba($color: #000000, $alpha: 0.2);
+  position: absolute;
+}
+
+.menu__icon--cart {
+  width: 21px;
+  height: 18px;
+  top: 3px;
+  left: -46px;
+}
+
+.menu__icon--search {
   width: 18px;
   height: 18px;
-  position: absolute;
   top: 3px;
   left: -44px;
 }
 
-.menu__item--cart .menu__link::after {
-  content: "";
-  background: url("../../img/icons/basket.svg") no-repeat top left;
-  width: 21px;
-  height: 18px;
-  position: absolute;
-  top: 3px;
-  left: -46px;
+.menu__link:hover .menu__icon {
+  fill: #63d1bb;
+}
+
+.menu__link:hover {
+  color: rgba($color: #000000, $alpha: 0.6);
+}
+
+.menu__link:active .menu__icon {
+  fill: rgba($color: #63d1bb, $alpha: 0.3);
+}
+
+.menu__link:active {
+  color: rgba($color: #000000, $alpha: 0.3);
 }
 
 @media (min-width: $tablet) {
@@ -78,7 +92,7 @@
     flex-direction: row;
     margin: 0 0 0 -37px;
     padding: 0;
-}
+  }
 
   .menu__item {
     border: none;
@@ -133,6 +147,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .menu__icon--cart {
+    top: 35px;
+    left: 31px;
+  }
+
+  .menu__icon--search {
+    top: 36px;
+    left: 33px;
   }
 }
 

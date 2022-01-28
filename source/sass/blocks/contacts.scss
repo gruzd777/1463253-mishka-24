@@ -62,6 +62,10 @@
   margin: 0 0 42px 0;
 }
 
+.contacts__iframe {
+  width: 100%;
+}
+
 @media (min-width: $tablet) {
   .contacts {
     position: relative;
@@ -75,7 +79,7 @@
     height: 81px;
     top: -23px;
     right: 53px;
-    background: url("../../img/icons/flag.svg") no-repeat;
+    background: url("../../img/flag.svg") no-repeat;
   }
 
   .contacts__title {

@@ -1,6 +1,15 @@
 .video {
   border: 1px solid #ececec;
   padding: 21px 0 0 0;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .video__title-wrapper {
@@ -15,7 +24,7 @@
     height: 22px;
     top: 12px;
     left: 33px;
-    background: url(../../img/icons/video.svg) no-repeat;
+    background: url("../../img/video.svg") no-repeat;
   }
 }
 
@@ -39,11 +48,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: url("../../img/icons/play.svg") no-repeat;
+    background: url("../../img/play.svg") no-repeat;
   }
 }
 
-.video__img {
+.video__picture {
   display: block;
   width: 100%;
 }
