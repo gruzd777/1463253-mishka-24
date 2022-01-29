@@ -113,7 +113,7 @@
       background: url("../img/promo-tablet-desktop.jpg") no-repeat center bottom;
       height: 746px;
       width: 1150px;
-      bottom: -117px;
+      bottom: -118px;
     }
   }
 
@@ -162,8 +162,8 @@
       left: 0;
       bottom: -2px;
       width: 100%;
-      height: 24px;
-      background: url("../../img/zigzag-tablet.svg");
+      height: 34px;
+      background: url("../img/zigzag-fill-desktop.svg");
       z-index: 5;
     }
   }
@@ -171,5 +171,21 @@
   .promo__wrapper {
     width: 1051px;
     margin: 0 auto;
+  }
+
+  .promo__title-container {
+    padding-top: 65px;
+    padding-bottom: 355px;
+  }
+
+  .promo__title {
+    font-size: 53px;
+    line-height: 57px;
+    width: 700px;
+  }
+
+  .promo__group {
+    padding: 0;
+    margin: 0 0 61px;
   }
 }

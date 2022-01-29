@@ -162,11 +162,20 @@
 
 
 @media (min-width: $desktop) {
+  .menu__list {
+    margin: 0 0 0 -137px;
+  }
+
   .menu__item {
-    margin: 0 0 50px 37px;
+    margin: 0 0 50px 25px;
   }
 
   .menu__item--desktop-only {
     display: block;
+  }
+
+  .menu__link--desktop {
+    font-size: 17px;
+    line-height: 24px;
   }
 }
