@@ -84,7 +84,6 @@
   .page-header__container {
     display: flex;
     flex-wrap: wrap;
-    background: #f1f1f1;
     padding: 90px 0 0 0;
     position: relative;
     overflow: hidden;
@@ -103,6 +102,10 @@
 
   .page-header--catalog {
     background: #f1f1f1;
+  }
+
+  .page-header--only-index {
+    background: #f9f9f9;
   }
 
   .page-header__wrapper {
@@ -145,6 +148,10 @@
 @media (min-width: $desktop) {
   .page-header {
     padding: 0 0 0 0;
+  }
+
+  .page-header--only-index {
+    background: #f9f9f9;
   }
 
   .page-header__logo {

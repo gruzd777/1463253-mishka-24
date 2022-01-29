@@ -8,7 +8,7 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body class="page-body">
-    <header class="page-header page-header--catalog">
+    <header class="page-header page-header--only-index">
       <div class="page-header__container">
         <a class="logo page-header__logo" href="index.html" aria-label="Возврат на главную страницу">
           <picture>
@@ -57,17 +57,21 @@
 
     <main class="page-main">
       <section class="promo">
-        <h1 class="visually-hidden">
-          Интернет-магазин декоративных изделий ручной работы для дома
-        </h1>
-        <p class="promo__title">Милые штуки ручной <br> работы для дома</p>
-        <div class="promo__group">
-          <div class="promo__back promo__back-light">
-            <a class="promo__link promo__link--light" href="#">Предметы <br> интерьера</a>
+        <div class="promo__wrapper">
+          <h1 class="visually-hidden">
+            Интернет-магазин декоративных изделий ручной работы для дома
+          </h1>
+          <div class="promo__title-container">
+            <p class="promo__title">Милые штуки ручной <br> работы для дома</p>
           </div>
-          <div class="promo__back promo__back-hard">
-            <a class="promo__link promo__link--dark" href="#">Детские <br> игрушки</a>
-          </div>
+          <div class="promo__group">
+            <div class="promo__back promo__back-light">
+              <a class="promo__link promo__link--light" href="#">Предметы <br> интерьера</a>
+            </div>
+            <div class="promo__back promo__back-hard">
+              <a class="promo__link promo__link--dark" href="#">Детские <br> игрушки</a>
+            </div>
+        </div>
         </div>
       </section>
       <section class="product container">

@@ -157,7 +157,6 @@ a {
   .page-header__container {
     display: flex;
     flex-wrap: wrap;
-    background: #f1f1f1;
     padding: 90px 0 0 0;
     position: relative;
     overflow: hidden;
@@ -175,6 +174,10 @@ a {
 
   .page-header--catalog {
     background: #f1f1f1;
+  }
+
+  .page-header--only-index {
+    background: #f9f9f9;
   }
 
   .page-header__wrapper {
@@ -216,6 +219,10 @@ a {
 @media (min-width: 1150px) {
   .page-header {
     padding: 0 0 0 0;
+  }
+
+  .page-header--only-index {
+    background: #f9f9f9;
   }
 
   .page-header__logo {
@@ -416,6 +423,24 @@ a {
   background: #f9f9f9;
 }
 
+.promo__title-container {
+  position: relative;
+  padding-bottom: 120px;
+  overflow: hidden;
+  padding-top: 71px;
+}
+.promo__title-container::after {
+  content: "";
+  width: 568px;
+  height: 373px;
+  position: absolute;
+  background: url(../img/promo-mobile.jpg) no-repeat center bottom;
+  bottom: -73px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+
 .promo__title {
   font-weight: 700;
   font-size: 27px;
@@ -423,7 +448,9 @@ a {
   margin: 0 auto;
   width: 250px;
   text-align: center;
-  padding: 0 0 119px 0;
+  padding: 0;
+  position: relative;
+  z-index: 10;
 }
 
 .promo__group {
@@ -477,14 +504,36 @@ a {
 
 @media (min-width: 768px) {
   .promo {
-    padding: 110px 0 0 0;
+    padding: 0;
+    position: relative;
+  }
+  .promo::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 24px;
+    background: url("../../img/zigzag-tablet.svg");
+    z-index: 5;
+  }
+
+  .promo__title-container {
+    padding-top: 110px;
+    padding-bottom: 371px;
+  }
+  .promo__title-container::after {
+    background: url("../img/promo-tablet-desktop.jpg") no-repeat center bottom;
+    height: 746px;
+    width: 1150px;
+    bottom: -117px;
   }
 
   .promo__title {
     font-size: 43px;
     line-height: 50px;
     width: 500px;
-    padding: 0 0 371px 0;
+    padding: 0;
   }
 
   .promo__group {
@@ -492,16 +541,6 @@ a {
     position: relative;
     padding: 0 50px;
     margin: 0 0 42px 0;
-  }
-  .promo__group::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    width: 100%;
-    height: 24px;
-    background: url("../../img/zigzag-tablet.svg");
-    z-index: 5;
   }
 
   .promo__back {
@@ -521,6 +560,27 @@ a {
   .promo__link--dark::before {
     top: 32px;
     right: 34px;
+  }
+}
+@media (min-width: 1150px) {
+  .promo {
+    padding: 0;
+    position: relative;
+  }
+  .promo::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 24px;
+    background: url("../../img/zigzag-tablet.svg");
+    z-index: 5;
+  }
+
+  .promo__wrapper {
+    width: 1051px;
+    margin: 0 auto;
   }
 }
 .product {
@@ -628,7 +688,7 @@ a {
 
 @media (min-width: 768px) {
   .product {
-    margin: 0 0 119px 0;
+    margin: 0 0 128px;
   }
 
   .product::after {
@@ -697,9 +757,69 @@ a {
   }
 
   .product__grid-3 {
-    padding: 14px 0 0 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
+    margin: -27px 0 0 7px;
+  }
+}
+@media (min-width: 1150px) {
+  .product {
+    margin: 0 auto 162px;
+    position: relative;
+  }
+
+  .product__container {
+    display: block;
+  }
+
+  .product__group-1 {
+    margin: 0;
+    position: absolute;
+    top: 67px;
+    left: 45px;
+  }
+
+  .product__subtitle {
+    margin: 0 0 0 57px;
+    font-size: 53px;
+    line-height: 43px;
+    max-width: 540px;
+  }
+
+  .product__row--green {
+    order: -1;
+    padding: 0;
+  }
+
+  .product__card {
+    margin: 0;
+    display: block;
+  }
+
+  .product__img {
+    display: block;
+  }
+
+  .product__row--small {
+    margin: 152px 0 0 174px;
+  }
+
+  .product__list {
+    margin: 61px 0 0 174px;
+  }
+
+  .product__grid-3 {
+    padding: 20px 0 0;
+    display: block;
+    position: relative;
+  }
+
+  .product__price {
+    margin: 0 0 0 115px;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0;
   }
 }
 .button-link {
@@ -744,10 +864,22 @@ a {
   .button-link--index-only {
     width: 292px;
     margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
   }
 
   .button-link--index-tablet {
     width: 230px;
+  }
+}
+@media (min-width: 1150px) {
+  .button-link--index-only {
+    width: 292px;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 174px;
   }
 }
 .about {
@@ -860,6 +992,49 @@ a {
 
   .about__item {
     width: 50%;
+  }
+}
+@media (min-width: 1150px) {
+  .about {
+    margin: 0 auto;
+    padding-left: 224px;
+  }
+
+  .about__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about__list {
+    width: 701px;
+  }
+
+  .about__list br {
+    display: none;
+  }
+
+  .about__item {
+    margin: 0 0 114px;
+  }
+
+  .about__item--ball {
+    order: 1;
+  }
+
+  .about__item--slyle {
+    order: 2;
+  }
+
+  .about__item--rocket {
+    order: 3;
+  }
+
+  .about__item--heart {
+    order: 4;
+  }
+
+  .about__item--present {
+    order: 5;
   }
 }
 .reviews {
@@ -981,14 +1156,27 @@ a {
 
 @media (min-width: 768px) {
   .reviews {
-    background: url("../../img/review-image.png") no-repeat left center;
+    position: relative;
     padding-top: 84px;
     margin: 0 0 201px 0;
   }
+  .reviews::before {
+    content: "";
+    width: 350px;
+    height: 457px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url("../../img/review-image.png") no-repeat left center;
+    background-size: contain;
+    z-index: 1;
+  }
 }
 @media (min-width: 768px) and (min-resolution: 2dppx) {
-  .reviews {
+  .reviews::before {
     background: url("../../img/review-image@2x.png") no-repeat left center;
+    background-size: contain;
   }
 }
 @media (min-width: 768px) {
@@ -1003,12 +1191,16 @@ a {
     font-size: 43px;
     line-height: 50px;
     margin: 0 0 38px 0;
+    position: relative;
+    z-index: 5;
   }
 }
 @media (min-width: 768px) {
   .reviews__list {
     font-size: 17px;
     line-height: 30px;
+    position: relative;
+    z-index: 5;
   }
 }
 @media (min-width: 768px) {
@@ -1047,6 +1239,11 @@ a {
 @media (min-width: 768px) {
   .reviews__btn--back {
     margin: 0 35px 0 0;
+  }
+}
+@media (min-width: 1150px) {
+  .reviews {
+    margin: 0 auto;
   }
 }
 .form-promo__title {
@@ -1683,6 +1880,14 @@ a {
 
   .contacts__map {
     margin: 0 0 58px 0;
+  }
+}
+@media (min-width: 1150px) {
+  .contacts {
+    position: relative;
+    padding: 0;
+    width: 1051px;
+    margin: 0 auto;
   }
 }
 .page-footer {

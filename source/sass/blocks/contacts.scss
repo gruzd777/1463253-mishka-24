@@ -126,3 +126,12 @@
     margin: 0 0 58px 0;
   }
 }
+
+@media (min-width: $desktop) {
+  .contacts {
+    position: relative;
+    padding: 0;
+    width: 1051px;
+    margin: 0 auto;
+  }
+}

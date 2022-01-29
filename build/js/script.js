@@ -9,7 +9,7 @@ const prev = document.querySelector('.reviews__btn--back');
 
 if (reviews.length > 0) {
   reviews[0].classList.add('reviews__item--active');
-
+  
 const reviewsModel = [];
 reviews.forEach(function(element, i) {
   reviewsModel.push (i === 0 ? true : false)
@@ -71,4 +71,3 @@ if (next) {
     synchronizeWithModel();
   });
 }
-

@@ -123,12 +123,26 @@
 
 @media (min-width: $tablet)  {
   .reviews {
-    background: url("../../img/review-image.png") no-repeat left center;
+    position: relative;
     padding-top: 84px;
     margin: 0 0 201px 0;
 
-    @media (min-resolution: 2dppx) {
-      background: url("../../img/review-image@2x.png") no-repeat left center;
+    &::before {
+      content: "";
+      width: 350px;
+      height: 457px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url("../../img/review-image.png") no-repeat left center;
+      background-size: contain;
+      z-index: 1;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../../img/review-image@2x.png") no-repeat left center;
+        background-size: contain;
+      }
     }
 
     &::after {
@@ -142,11 +156,15 @@
     font-size: 43px;
     line-height: 50px;
     margin: 0 0 38px 0;
+    position: relative;
+    z-index: 5;
   }
 
   .reviews__list {
     font-size: 17px;
     line-height: 30px;
+    position: relative;
+    z-index: 5;
   }
 
   .reviews__person {
@@ -179,11 +197,13 @@
     }
   }
 
-  .reviews__btn {
-
-  }
-
   .reviews__btn--back {
     margin: 0 35px 0 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .reviews {
+    margin: 0 auto;
   }
 }
