@@ -46,6 +46,7 @@
 @media (min-width: $tablet) {
   .page-footer {
     padding: 50px;
+    padding-top: 44px;
   }
 
   .page-footer__group {
@@ -61,5 +62,19 @@
 
   .page-footer__cop {
     margin: 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-footer__group {
+    align-items: flex-start;
+  }
+
+  .page-footer__logo {
+    padding: 4px 0 0 0;
+  }
+
+  .page-footer__cop {
+    padding: 5px 0 0 0;
   }
 }

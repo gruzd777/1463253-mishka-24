@@ -6,14 +6,37 @@ const reviews = document.querySelectorAll('.reviews__item');
 const next = document.querySelector('.reviews__btn--next');
 const prev = document.querySelector('.reviews__btn--back');
 
-
 if (reviews.length > 0) {
   reviews[0].classList.add('reviews__item--active');
 
-const reviewsModel = [];
-reviews.forEach(function(element, i) {
-  reviewsModel.push (i === 0 ? true : false)
-});
+  const reviewsModel = [];
+  reviews.forEach(function(element, i) {
+    reviewsModel.push (i === 0 ? true : false);
+  });
+
+  next.addEventListener('click', function() {
+    const indexCurrentActive = reviewsModel.indexOf(true);
+    if (indexCurrentActive < reviewsModel.length - 1) {
+      reviewsModel[indexCurrentActive] = false;
+      reviewsModel[indexCurrentActive + 1] = true;
+    }
+    synchronizeWithModel();
+  });
+
+  prev.addEventListener('click', function() {
+    const indexCurrentActive = reviewsModel.indexOf(true);
+    if (indexCurrentActive > 0) {
+      reviewsModel[indexCurrentActive] = false;
+      reviewsModel[indexCurrentActive - 1] = true;
+    }
+    synchronizeWithModel();
+  });
+
+  function synchronizeWithModel(){
+    document.querySelector('.reviews__item--active').classList.remove('reviews__item--active');
+    const indexCurrentActive = reviewsModel.indexOf(true);
+    reviews[indexCurrentActive].classList.add('reviews__item--active');
+  }
 }
 
 pageHeaderToggle.classList.add('page-header__toggle--visible');
@@ -43,32 +66,4 @@ if (modal) {
   });
 }
 
-
-function synchronizeWithModel(){
-  document.querySelector('.reviews__item--active').classList.remove('reviews__item--active');
-  const indexCurrentActive = reviewsModel.indexOf(true);
-  reviews[indexCurrentActive].classList.add('reviews__item--active');
-}
-
-if (next) {
-  next.addEventListener('click', function() {
-    const indexCurrentActive = reviewsModel.indexOf(true);
-    if (indexCurrentActive < reviewsModel.length - 1) {
-      reviewsModel[indexCurrentActive] = false;
-      reviewsModel[indexCurrentActive + 1] = true;
-    }
-    console.log(reviewsModel);
-    synchronizeWithModel();
-  });
-
-  prev.addEventListener('click', function() {
-    const indexCurrentActive = reviewsModel.indexOf(true);
-    if (indexCurrentActive > 0) {
-      reviewsModel[indexCurrentActive] = false;
-      reviewsModel[indexCurrentActive - 1] = true;
-    }
-    console.log(reviewsModel);
-    synchronizeWithModel();
-  });
-}
 

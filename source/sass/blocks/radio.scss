@@ -41,3 +41,19 @@
     top: 10px;
   }
 }
+
+@media (min-width: $desktop) {
+  .radio + label::before {
+    width: 50px;
+    height: 50px;
+    left: -2px;
+    top: -2px;
+  }
+
+  .radio:checked + label::after {
+    width: 20px;
+    height: 20px;
+    left: 13px;
+    top: 13px;
+  }
+}

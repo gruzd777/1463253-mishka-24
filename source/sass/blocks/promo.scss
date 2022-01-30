@@ -1,19 +1,25 @@
 .promo {
-  // background: url("../../img/promo-mobile.png") no-repeat center -18px;
-  // padding: 72px 0 0 0;
-
-  // @media (min-resolution: 2dppx) {
-  //   background: url("../../img/promo-mobile@2x.png") no-repeat center -18px;
-  // }
-
-  // @media (min-width: $tablet) {
-  //   background: url("../../img/promo-tablet-desktop.png") no-repeat top center;
-  // }
-
-  // @media (min-width: $tablet) and (min-resolution: 2dppx) {
-  //   background: url("../../img/promo-tablet-desktop@2x.png") no-repeat top center;
   background: #f9f9f9;
+}
+
+.promo__title-container {
+  position: relative;
+  padding-bottom: 120px;
+  overflow: hidden;
+  padding-top: 71px;
+
+  &::after {
+    content: "";
+    width: 568px;
+    height: 373px;
+    position: absolute;
+    background: url(../img/promo-mobile.jpg) no-repeat center bottom;
+    bottom: -73px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
   }
+}
 
 .promo__title {
   font-weight: 700;
@@ -22,7 +28,9 @@
   margin: 0 auto;
   width: 250px;
   text-align: center;
-  padding: 0 0 119px 0;
+  padding: 0;
+  position: relative;
+  z-index: 10;
 }
 
 .promo__group {
@@ -53,6 +61,7 @@
 
   &--light {
     background: $base-green-l;
+    z-index: 50;
 
     &::before {
       content: "";
@@ -67,6 +76,7 @@
 
   &--dark {
     background: $base-green-d;
+    z-index: 50;
 
     &::before {
       content: "";
@@ -82,14 +92,38 @@
 
 @media (min-width: $tablet) {
   .promo {
-    padding: 110px 0 0 0;
+    padding: 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 24px;
+      background: url("../../img/zigzag-tablet.svg");
+      z-index: 100;
+    }
+  }
+
+  .promo__title-container {
+    padding-top: 110px;
+    padding-bottom: 371px;
+
+    &::after {
+      background: url("../img/promo-tablet-desktop.jpg") no-repeat center bottom;
+      height: 746px;
+      width: 1150px;
+      bottom: -118px;
+    }
   }
 
   .promo__title {
     font-size: 43px;
     line-height: 50px;
     width: 500px;
-    padding: 0 0 371px 0;
+    padding: 0;
   }
 
   .promo__group {
@@ -97,17 +131,6 @@
     position: relative;
     padding: 0 50px;
     margin: 0 0 42px 0;
-
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -1px;
-      width: 100%;
-      height: 24px;
-      background: url("../../img/zigzag-tablet.svg");
-      z-index: 5;
-    }
   }
 
   .promo__back {
@@ -127,5 +150,44 @@
   .promo__link--dark::before {
     top: 32px;
     right: 34px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .promo {
+    padding: 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 34px;
+      background: url("../img/zigzag-fill-desktop.svg");
+      z-index: 5;
+    }
+  }
+
+  .promo__wrapper {
+    width: 1051px;
+    margin: 0 auto;
+  }
+
+  .promo__title-container {
+    padding-top: 65px;
+    padding-bottom: 355px;
+  }
+
+  .promo__title {
+    font-size: 53px;
+    line-height: 57px;
+    width: 700px;
+  }
+
+  .promo__group {
+    padding: 0;
+    margin: 0 0 61px;
   }
 }

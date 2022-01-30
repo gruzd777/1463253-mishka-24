@@ -1,3 +1,11 @@
 .logo {
   display: block;
 }
+
+.logo:hover {
+  opacity: 0.6;
+}
+
+.logo:active {
+  opacity: 0.3;
+}

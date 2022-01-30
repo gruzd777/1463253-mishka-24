@@ -12,7 +12,7 @@
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  z-index: 5;
+  z-index: 5000;
   background: #ffffff;
   box-shadow: 0px 5px 10px rgba(0, 1, 1, 0.25);
   padding: 30px 0 0 0;
@@ -32,7 +32,7 @@
   top: 0;
   left: 0;
   background: rgba($color: #ffffff, $alpha: 0.9);
-  z-index: 2;
+  z-index: 1000;
 }
 
 .modal__title {

@@ -113,3 +113,49 @@
     width: 50%;
   }
 }
+
+@media (min-width: $desktop) {
+  .about {
+    margin: 0 auto -24px;
+    padding-left: 224px;
+  }
+
+  .about__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin: 0 0 100px 64px;
+  }
+
+  .about__list {
+    width: 701px;
+    margin: 0 0 0 63px;
+  }
+
+  .about__list br {
+    display: none;
+  }
+
+  .about__item {
+    margin: 0 0 114px;
+  }
+
+  .about__item--ball {
+    order: 1;
+  }
+
+  .about__item--slyle {
+    order: 2;
+  }
+
+  .about__item--rocket {
+    order: 3;
+  }
+
+  .about__item--heart {
+    order: 4;
+  }
+
+  .about__item--present {
+    order: 5;
+  }
+}

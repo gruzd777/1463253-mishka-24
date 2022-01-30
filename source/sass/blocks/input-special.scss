@@ -28,3 +28,25 @@
   outline: none;
 }
 
+@media (min-width: $tablet) {
+  .input-special {
+    margin: -15px 0 0 0;
+  }
+
+  .input-special__svg {
+    right: 27px;
+    top: 11px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .input-special {
+    width: 699px;
+    flex-grow: 0;
+  }
+
+  .input-special__svg {
+    right: 6px;
+    top: 14px;
+  }
+}

@@ -32,13 +32,13 @@
   height: 17px;
   left: 7px;
   top: 2px;
-  background: url("../../img/icons/tick.svg") no-repeat;
+  background: url("../img/tick.svg") no-repeat;
 
   @media (min-width: $tablet) {
     width: 32px;
     height: 22px;
     left: 11px;
     top: 6px;
-    background: url("../../img/icons/tick-tablet.svg") no-repeat;
+    background: url("../img/tick-tablet.svg") no-repeat;
   }
 }
