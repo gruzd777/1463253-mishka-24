@@ -1,6 +1,7 @@
 .form {
   margin-bottom: 54px;
 }
+
 .form__flex-group {
   @media (min-width: $tablet) {
     display: flex;
@@ -33,6 +34,7 @@
 .form__adress {
   font-style: normal;
   margin: 0 0 38px 0;
+  padding: 17px 0 0 0;
 }
 
 .form__item-radio {
@@ -92,7 +94,7 @@
   .form__list--color {
     display: flex;
     flex-wrap: wrap;
-    margin: -7px 0 0px -10px;
+    margin: -7px 0 0 -10px;
   }
 
   .form__fieldset {
@@ -184,7 +186,7 @@
   .form__item-radio {
     padding: 0 0 0 78px;
     width: auto;
-    margin: 0px 0 40px 0;
+    margin: 0 0 40px 0;
   }
 
   .form__item-checkbox {

@@ -1021,7 +1021,7 @@ a {
 }
 @media (min-width: 1150px) {
   .about {
-    margin: 0 auto;
+    margin: 0 auto -24px;
     padding-left: 224px;
   }
 
@@ -1271,6 +1271,42 @@ a {
 @media (min-width: 1150px) {
   .reviews {
     margin: 0 auto;
+    padding-top: 78px;
+    position: relative;
+  }
+  .reviews::after {
+    content: "";
+    position: absolute;
+    bottom: -195px;
+    height: 34px;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url("../img/zigzag-line-desktop.svg.svg") no-repeat;
+  }
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin: 0 0 36px 174px;
+  }
+
+  .reviews__list {
+    padding: 0 0 0 175px;
+  }
+
+  .reviews__person {
+    margin: 45px 0 3px;
+    font-size: 17px;
+  }
+
+  .reviews__buttons {
+    right: 19px;
+    bottom: 4px;
+  }
+
+  .reviews__button {
+    right: 0;
   }
 }
 .form-promo__title {
@@ -1389,6 +1425,7 @@ a {
 .form__adress {
   font-style: normal;
   margin: 0 0 38px 0;
+  padding: 17px 0 0 0;
 }
 
 .form__item-radio {
@@ -1448,7 +1485,7 @@ a {
   .form__list--color {
     display: flex;
     flex-wrap: wrap;
-    margin: -7px 0 0px -10px;
+    margin: -7px 0 0 -10px;
   }
 
   .form__fieldset:nth-child(2) {
@@ -1536,7 +1573,7 @@ a {
   .form__item-radio {
     padding: 0 0 0 78px;
     width: auto;
-    margin: 0px 0 40px 0;
+    margin: 0 0 40px 0;
   }
 
   .form__item-checkbox {
@@ -1912,9 +1949,53 @@ a {
 @media (min-width: 1150px) {
   .contacts {
     position: relative;
-    padding: 0;
+    padding: 258px 0 105px 0;
     width: 1051px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+  }
+  .contacts::after {
+    top: 317px;
+    left: 63px;
+  }
+
+  .contacts__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin: 77px 0 35px 156px;
+  }
+
+  .contacts__row {
+    width: auto;
+  }
+
+  .contacts__row-2 br {
+    display: block;
+  }
+
+  .contacts__group {
+    flex-direction: column;
+    margin: 0 0 90px 157px;
+  }
+
+  .contacts__grid-1 {
+    width: auto;
+  }
+
+  .contacts__grid-2 {
+    grid-column: 2/3;
+    grid-row: 1/-1;
+  }
+
+  .contacts__grid-3 {
+    width: auto;
+    margin: -7px 0 0px 56px;
+  }
+
+  .contacts__map {
+    margin: 0;
   }
 }
 .page-footer {

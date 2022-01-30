@@ -130,8 +130,53 @@
 @media (min-width: $desktop) {
   .contacts {
     position: relative;
-    padding: 0;
+    padding: 258px 0 105px 0;
     width: 1051px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+
+    &::after {
+      top: 317px;
+      left: 63px;
+    }
+  }
+
+  .contacts__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin: 77px 0 35px 156px;
+  }
+
+  .contacts__row {
+    width: auto;
+  }
+
+  .contacts__row-2 br {
+    display: block;
+  }
+
+  .contacts__group {
+    flex-direction: column;
+    margin: 0 0 90px 157px;
+  }
+
+  .contacts__grid-1 {
+    width: auto;
+  }
+
+  .contacts__grid-2 {
+    grid-column: 2/3;
+    grid-row: 1/-1;
+  }
+
+  .contacts__grid-3 {
+    width: auto;
+    margin: -7px 0 0px 56px;
+  }
+
+  .contacts__map {
+    margin: 0;
   }
 }

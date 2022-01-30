@@ -205,5 +205,42 @@
 @media (min-width: $desktop) {
   .reviews {
     margin: 0 auto;
+    padding-top: 78px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -195px;
+      height: 34px;
+      width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: url("../img/zigzag-line-desktop.svg.svg") no-repeat;
+    }
+  }
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin: 0 0 36px 174px;
+  }
+
+  .reviews__list {
+    padding: 0 0 0 175px;
+  }
+
+  .reviews__person {
+    margin: 45px 0 3px;
+    font-size: 17px;
+  }
+
+  .reviews__buttons {
+    right: 19px;
+    bottom: 4px;
+  }
+
+  .reviews__button {
+    right: 0;
   }
 }
