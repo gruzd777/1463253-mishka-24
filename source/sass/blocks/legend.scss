@@ -37,3 +37,16 @@
     background: none;
   }
 }
+
+@media (min-width: $desktop) {
+  .legend--adress {
+    padding: 0 0 0 61px;
+    box-sizing: border-box;
+  }
+
+  .legend--extra {
+    padding: 0 0 0 63px;
+    width: 97px;
+    margin: 0 16px 0 0;
+  }
+}

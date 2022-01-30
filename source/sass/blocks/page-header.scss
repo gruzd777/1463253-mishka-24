@@ -28,7 +28,7 @@
   top: 38px;
   right: 31px;
   cursor: pointer;
-  background: #ffffff;
+  background: none;
   border: none;
   display: none;
 }
@@ -87,6 +87,7 @@
     padding: 90px 0 0 0;
     position: relative;
     overflow: hidden;
+    background: #f1f1f1;
 
     &::after {
       content: "";
@@ -98,6 +99,10 @@
       left: 0;
       border-bottom: 2px solid rgba($color: #000000, $alpha: 0.1);
     }
+  }
+
+  .page-header__container--only-index {
+    background: #f9f9f9;
   }
 
   .page-header--catalog {
@@ -148,6 +153,7 @@
 @media (min-width: $desktop) {
   .page-header {
     padding: 0 0 0 0;
+    background: #f1f1f1;
   }
 
   .page-header--only-index {
@@ -173,5 +179,10 @@
       left: 50%;
       transform: translateX(-50%);
     }
+  }
+
+  .page-header__deleviry {
+    right: 2px;
+    top: 109px;
   }
 }

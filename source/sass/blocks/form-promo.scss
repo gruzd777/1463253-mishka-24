@@ -26,3 +26,11 @@
     width: 625px;
   }
 }
+
+@media (min-width: $desktop) {
+  .form-promo__heading {
+    padding: 95px 0 0;
+    margin: 0 0 79px 176px;
+    width: 675px;
+  }
+}

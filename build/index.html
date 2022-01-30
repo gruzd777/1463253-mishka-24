@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.min.css" />
     <title>HTML Academy: Мишка</title>
+    <link rel="icon" href="favicon.ico">
   </head>
   <body class="page-body">
     <header class="page-header page-header--only-index">
-      <div class="page-header__container">
-        <a class="logo page-header__logo" href="index.html" aria-label="Возврат на главную страницу">
+      <div class="page-header__container page-header__container--only-index">
+        <a class="logo page-header__logo" aria-label="Возврат на главную страницу">
           <picture>
             <source srcset="./img/mishka-logo-desktop.svg" media="(min-width: 1150px)">
             <source srcset="./img/mishka-logo-tablet.svg" media="(min-width: 768px)">
             <img class="page-header__logo-img" src="./img/mishka-logo-mobile.svg" alt="Логотип сайта Мишка">
           </picture>
         </a>
-        <nav class="page-header__menu">
+        <nav class="page-header__menu page-header__menu--js">
           <div class="menu page-header__wrapper">
           <ul class="menu__list page-header__list">
             <li class="menu__item">
@@ -41,10 +42,10 @@
               </a>
             </li>
             <li class="menu__item menu__item--desktop-only">
-              <a class="menu__link" href="#">Распродажа</a>
+              <a class="menu__link" href="#">Новые поступления</a>
             </li>
             <li class="menu__item menu__item--desktop-only">
-              <a class="menu__link" href="#">Новые поступления</a>
+              <a class="menu__link" href="#">Распродажа</a>
             </li>
           </ul>
         </div>
@@ -197,47 +198,49 @@
       </section>
     </main>
 
-    <footer class="page-footer container">
-      <div class="page-footer__group">
-        <a class="logo page-footer__logo">
-          <svg class="page-footer__logo" width="102" height="34">
-            <use href="./img/sprite.svg#logo-footer"></use>
-          </svg>
-        </a>
-        <section class="social">
-          <h2 class="social__title visually-hidden">Мы в социальных сетях</h2>
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link" href="#" aria-label="Мы в инстаграмм">
-                <svg class="social__icon social__icon--insta" width="22" height="22">
-                  <use href="./img/sprite.svg#insta"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#" aria-label="Мы в фейсбук">
-                <svg class="social__icon social__icon--fb" width="15" height="28">
-                  <use href="./img/sprite.svg#fb"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#" aria-label="Мы в твиттер">
-                <svg class="social__icon social__icon--twitter" width="23" height="20">
-                  <use href="./img/sprite.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </section>
-        <p class="page-footer__cop">
-          <span class="page-footer__preview">Разработано</span>
-          <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Лендинг интенсива «HTML и CSS. Адаптивная вёрстка и автоматизация»">
-            <svg class="page-footer__icon" width="27" height="35">
-              <use href="./img/sprite.svg#htmlacademy-footer"></use>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="page-footer__group">
+          <a class="logo page-footer__logo">
+            <svg class="page-footer__logo" width="102" height="34">
+              <use href="./img/sprite.svg#logo-footer"></use>
             </svg>
           </a>
-        </p>
+          <section class="social">
+            <h2 class="social__title visually-hidden">Мы в социальных сетях</h2>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="#" aria-label="Мы в инстаграмм">
+                  <svg class="social__icon social__icon--insta" width="22" height="22">
+                    <use href="./img/sprite.svg#insta"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" aria-label="Мы в фейсбук">
+                  <svg class="social__icon social__icon--fb" width="15" height="28">
+                    <use href="./img/sprite.svg#fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" aria-label="Мы в твиттер">
+                  <svg class="social__icon social__icon--twitter" width="23" height="20">
+                    <use href="./img/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <p class="page-footer__cop">
+            <span class="page-footer__preview">Разработано</span>
+            <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Лендинг интенсива «HTML и CSS. Адаптивная вёрстка и автоматизация»">
+              <svg class="page-footer__icon" width="27" height="35">
+                <use href="./img/sprite.svg#htmlacademy-footer"></use>
+              </svg>
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
     <section class="modal">
@@ -267,6 +270,6 @@
         </div>
       </div>
     </section>
-    <script src="./js/script.js"></script>
+    <script src="./js/script.min.js"></script>
   </body>
 </html>
