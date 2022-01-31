@@ -42,6 +42,10 @@
   display: block;
 }
 
+.card__title-link {
+  color: #000000;
+}
+
 .card__row {
   margin: 0;
   font-weight: normal;
@@ -60,15 +64,6 @@
   font-weight: bold;
   font-size: 15px;
   line-height: 24px;
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   width: 20px;
-  //   height: 19px;
-  //   top: -1px;
-  //   right: 27px;
-  //   background: url("../../img/icons/cart-catalog.svg") no-repeat;
-  // }
 }
 
 .card__icon {

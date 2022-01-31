@@ -121,7 +121,7 @@
   background: url("../../img/huge-arrow-right.svg") no-repeat;
 }
 
-@media (min-width: $tablet)  {
+@media (min-width: $tablet) {
   .reviews {
     position: relative;
     padding-top: 84px;
@@ -158,6 +158,7 @@
     margin: 0 0 38px 0;
     position: relative;
     z-index: 5;
+    width: 250px;
   }
 
   .reviews__list {
