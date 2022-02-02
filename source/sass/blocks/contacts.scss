@@ -60,6 +60,20 @@
 
 .contacts__map {
   margin: 0 0 42px 0;
+  position: relative;
+  min-height: 454px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 454px;
+    background: url("../img/map-mobile.jpg") no-repeat top center;
+    background-size: cover;
+    z-index: 1;
+  }
 }
 
 .contacts__iframe {
@@ -124,6 +138,13 @@
 
   .contacts__map {
     margin: 0 0 58px 0;
+
+    &::before {
+      width: 100%;
+      height: 457px;
+      background: url("../img/map-tablet.jpg") no-repeat top center;
+      background-size: cover;
+    }
   }
 }
 
@@ -178,5 +199,12 @@
 
   .contacts__map {
     margin: 0;
+
+    &::before {
+      width: 527px;
+      height: 457px;
+      background: url("../img/map-desktop.jpg") no-repeat top center;
+      z-index: 1;
+    }
   }
 }
