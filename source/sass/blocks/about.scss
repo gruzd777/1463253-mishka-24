@@ -28,12 +28,6 @@
   display: flex;
   align-items: flex-end;
 
-  @media (min-width: 321px) {
-    br {
-      display: none;
-    }
-  }
-
   &:last-child {
     margin: 0 0 0 0;
   }
@@ -92,7 +86,17 @@
   background: url("../../img/present.svg") no-repeat;
 }
 
+@media (min-width: 321px) {
+  .about__brake--mobile:none(:first-child) {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet) {
+  .about {
+    margin: 0 0 -29px;
+  }
+
   .about__title {
     font-size: 43px;
     line-height: 50px;
@@ -111,32 +115,7 @@
 
   .about__item {
     width: 50%;
-  }
-}
-
-@media (min-width: $desktop) {
-  .about {
-    margin: 0 auto -24px;
-    padding-left: 224px;
-  }
-
-  .about__title {
-    font-size: 53px;
-    line-height: 57px;
-    margin: 0 0 100px 64px;
-  }
-
-  .about__list {
-    width: 701px;
-    margin: 0 0 0 63px;
-  }
-
-  .about__list br {
-    display: none;
-  }
-
-  .about__item {
-    margin: 0 0 114px;
+    margin: 0 0 113px;
   }
 
   .about__item--ball {
@@ -157,5 +136,28 @@
 
   .about__item--present {
     order: 5;
+  }
+}
+
+@media (min-width: $desktop) {
+  .about {
+    margin: 0 auto -24px;
+    padding-left: 224px;
+  }
+
+  .about__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin: 0 0 100px 64px;
+  }
+
+  .about__list {
+    width: 701px;
+    margin: 0 0 0 63px;
+  }
+
+
+  .about__item {
+    margin: 0 0 114px;
   }
 }
