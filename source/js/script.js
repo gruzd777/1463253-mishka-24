@@ -1,10 +1,20 @@
 const pageHeaderToggle = document.querySelector('.page-header__toggle');
 const pageHeaderMenu = document.querySelector('.page-header__menu');
 const orderButton = document.querySelector('.order-button');
+const cardLinksPrice = document.querySelectorAll('.card__link--price');
 const modal = document.querySelector('.modal');
 const reviews = document.querySelectorAll('.reviews__item');
 const next = document.querySelector('.reviews__btn--next');
 const prev = document.querySelector('.reviews__btn--back');
+
+if (cardLinksPrice) {
+  cardLinksPrice.forEach(function(cardLink) {
+    cardLink.addEventListener('click', function(evt) {
+      evt.preventDefault();
+      modal.classList.add('modal--visible');
+    });
+  });
+}
 
 if (reviews.length > 0) {
   reviews[0].classList.add('reviews__item--active');

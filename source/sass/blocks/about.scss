@@ -87,7 +87,7 @@
 }
 
 @media (min-width: 321px) {
-  .about__brake--mobile:none(:first-child) {
+  .about__brake--mobile:not(:first-child) {
     display: none;
   }
 }

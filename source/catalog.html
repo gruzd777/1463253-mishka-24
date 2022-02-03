@@ -233,6 +233,33 @@
       </div>
     </div>
   </footer>
+  <section class="modal">
+    <div class="modal__container">
+      <div class="container modal__wrapper">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p class="modal__row">Выберите размер:</p>
+        <form class="form modal__form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="modal__form-container">
+            <ul class="modal__list">
+              <li class="modal__item">
+                <input class="input modal__input visually-hidden" type="radio" name="size" value="S" id="S" checked/>
+                <label class="label modal__label" for="S">S</label>
+              </li>
+              <li class="modal__item">
+                <input class="input modal__input visually-hidden" type="radio" name="size" value="M" id="M"/>
+                <label class="label modal__label" for="M">M</label>
+              </li>
+              <li class="modal__item">
+                <input class="input modal__input visually-hidden" type="radio" name="size" value="L" id="L"/>
+                <label class="label modal__label" for="L">L</label>
+              </li>
+            </ul>
+          </div>
+          <button class="modal__button" type="submit">Добавить</button>
+        </form>
+      </div>
+    </div>
+  </section>
 <script src="./js/script.min.js"></script>
 </body>
 </html>
